@@ -14,6 +14,9 @@
 1. automatically tracks JavaScript state changes
 2. efficiently updates the DOM when the state change
 
+### Document Object Model (DOM)
+DOM (Document Object Model) ဆိုတာ Web Document အတွက် HTML,XML Document တို့လိုမျိုး tree-like structure programming interface တစ်ခုပဲဖြစ်ပါတယ်။ DOM ဟာ programs တွေ scripts တွေကို dynically access ဖြစ်တယ်၊ web document ရဲ့ content တွေ structure တွေ style တွေကို manipulate လုပ်ပေးနိုင်တယ်။ Vue Js ဟာ DOM ကိုသုံးထားပြီးတော့ UI ကို manipulate လုပ်ပြီး အလိုအလျှောက် Update လုပ်ပေးတဲ့  framework တစ်ခုဖြစ်တယ်။
+
 ### Two Way Data Binding
 Vue Js ဟာ UI element နဲ့ Javascript Data Modal တို့ကို အလိုအလျောက် Synchronization ပြုလုပ်ပေးထားတဲ့ two way data binding concept ကို အသုံးပြုထားပါတယ်။ ဆိုလိုတာကတော့ UI element မှာ တစ်ခုခုအပြောင်းအလဲဖြစ်တာနဲ့ Data Modal ကလဲ Update ဖြစ်မှာဖြစ်သလို၊ Data Modal မှာတစ်ခုခုအပြောင်းအလဲဖြစ်တာနဲ့ UI element ကလဲ အလိုအလျှောက် Update ဖြစ်သွားမှာဖြစ်ပါတယ်။
 
