@@ -28,13 +28,20 @@ Vue Js ဟာ UI element နဲ့ Javascript Data Modal တို့ကို �
     (vue 2)
     1.1 beforeCreated: Executed before the component instance is initialized. Data and events are not set yet.
     1.2 created: Called after the component instance has been created. Data observation, events and computed properties are set yet.
-    
+
     (vue 3)
     1.1 onBeforeCreate: Called before the component instance is created.
-    1.1 created: Called after the component instance is created.
-2.  mount
-3.  update
-4.  Destruction
+    1.1 onCreated: Called after the component instance is created.
+#### 2.  mount
+    (vue 2)
+    1.1 beforeMount: Triggered just before the component is inserted into the DOM.
+    1.2 mounted: Called once the component is inserted into the DOM. Ideal for initial DOM manipulation and API interactions.
+
+    (vue 3)
+    1.1 onBeforeMount: Called before the component is mounted to the DOM.
+    1.1 onMounted: Called after the component is mounted.
+#### 3.  update
+#### 4.  Destruction
 
 ### Using vue from CDN
 HTML page တွေမှာ Vue ကို CDN ကနေအသုံးပြုလိုတဲ့အခါ vue ရဲ့ package ကို HTML page ရဲ့ &lt;script&gt; tag ကနေခေါ်ပြီးအသုံးပြုရမှာဖြစ်ပါတယ်။
