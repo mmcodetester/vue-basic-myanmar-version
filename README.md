@@ -218,7 +218,7 @@ Boolean Attributes တွေကို <code>:disabled</code> ၊ <code>v-if</cod
    </code>
  </pre>
 
-### v-for with Object
+### <code>v-for</code> with Object
 <code>v-for</code> directive မှာ Object တစ်ခုရဲ့  value တင်မဟုတ်ပဲ key ကိုပါ ထပ်ဆင့်ဖော်ပြလိုတဲ့အခါ <code>(value,key,index) in item</code> syntax ကိုအသုံးပြုရမှာဖြစ်ပါတယ်။
 #### ဥပမာ person ဆိုတဲ့ object တစ်ခုမှာ id, name, age ဆိုတဲ့ Fiels တွေပါတယ်ဆိုပါစို့ <code>id</code> က key ဖြစ်ပြီး 1 က value ဖြစ်တယ်။ <code>name</code> က key ဖြစ်ပြီး Alex က value ဖြစ်တယ်။ တစ်နည်းပြောရရင် object တစ်ခုဟာ key,value pair နဲ့ create လုပ်ထားတာဖြစ်တယ်။
 <pre>
