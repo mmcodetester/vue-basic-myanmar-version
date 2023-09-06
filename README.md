@@ -265,7 +265,7 @@ Boolean Attributes တွေကို <code>:disabled</code> ၊ <code>v-if</cod
       &lt;/li&gt;
     </code>
 </pre>
-ဆိုပြီးသုံးနိုင်တယ်။
+ဆိုပြီးသုံးနိုင်တယ်။ အထက်ပါ example နှစ်ခုစလုံးမှာ item က success ဖြစ်မှသာ message ကို ပြပေးမှာဖြစ်ပါတယ်။
 ### Composition API
 Compositon API ဆိုတာ vue ရဲ့ API function တွေကို import လုပ်ပြီးအသုံးပြုရတဲ့ Components တွေဖြစ်ပါတယ်။
 
