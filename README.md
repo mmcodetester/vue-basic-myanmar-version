@@ -352,7 +352,7 @@ Single File Components (SFCs) တွေမှာဆိုရင် composition a
       </template>
   </code>
 </pre>
-&lt;script setup&gt; ထဲမှာမရေးပဲ &lt;script&gt;  ထဲမှာရေးမယ်ဆိုရင် setup() {} function ထဲမှာ ရေးရမှာဖြစ်ပါတယ်။
+<code>&lt;script setup&gt;</code> ထဲမှာမရေးပဲ <code>&lt;script&gt;</code> ထဲမှာရေးမယ်ဆိုရင် <code>setup() {}<code> function ထဲမှာ ရေးရမှာဖြစ်ပါတယ်။
 <pre>
   <code class="language-js" style="margin-left:-140px;">
     &lt;template&gt;
