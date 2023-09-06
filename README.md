@@ -60,7 +60,7 @@ Vue Js ဟာ UI element နဲ့ Javascript Data Modal တို့ကို �
     5.1 errorCaptured: Called when an error occurs in any child component or during rendering. Allows capturing and handling errors in the component tree.
 
     (vue 3)
-    5.1 This hook is called when an error is caught in any child component. It's used for error handling and is not a direct equivalent of any Vue 2.x hook.
+    5.1 onErrorCaptured: This hook is called when an error is caught in any child component. It's used for error handling and is not a direct equivalent of any Vue 2.x hook.
 
 ### Using vue from CDN
 HTML page တွေမှာ Vue ကို CDN ကနေအသုံးပြုလိုတဲ့အခါ vue ရဲ့ package ကို HTML page ရဲ့ &lt;script&gt; tag ကနေခေါ်ပြီးအသုံးပြုရမှာဖြစ်ပါတယ်။
