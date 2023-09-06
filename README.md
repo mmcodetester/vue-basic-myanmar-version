@@ -357,6 +357,27 @@ Single File Components (SFCs) တွေမှာဆိုရင် composition a
 <pre>
   <code class="language-js" style="margin-left:-140px;">
     &lt;template&gt;
+      &lt;h4&gt;Vue Composition API&lt;/h4&gt;
+      &lt;p&gt;&#123;&#123; count &#125;&#125; &lt;/p&gt;
+    &lt;/template&gt;
+
+    &lt;script&gt;
+      import {ref} from 'vue'
+      export default &#123;
+        setup()&#123;
+          const count=ref(0);
+          return{
+            count,
+          }
+        &#125;
+      &#125;
+    &lt;/script&gt;
+  </code>
+</pre>
+
+<pre>
+  <code class="language-js" style="margin-left:-140px;">
+    &lt;template&gt;
 
       &lt;h4&gt;Vue Composition API&lt;/h4&gt;
       &lt;p&gt;&#123;&#123; count &#125;&#125; &lt;/p&gt;
@@ -390,7 +411,6 @@ Single File Components (SFCs) တွေမှာဆိုရင် composition a
     &lt;/script&gt;
   </code>
 </pre>
-
 ### option api
 <pre>
                 <code class="language-js" style="margin-left:-140px;">
