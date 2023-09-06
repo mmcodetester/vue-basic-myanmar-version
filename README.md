@@ -278,7 +278,7 @@ Boolean Attributes တွေကို <code>:disabled</code> ၊ <code>v-if</cod
 #### example
 <pre>
   <code class="language-template">
-    <div v-for="item in items" <code>:key</code>="item.id">
+    <div v-for="item in items" :key="item.id">
       <!-- content -->
     </div>
   </code>
