@@ -248,6 +248,24 @@ Boolean Attributes တွေကို <code>:disabled</code> ၊ <code>v-if</cod
     0,name:Alex
   </code>
 </pre>
+#### v-for with v-if
+<code>v-if</code> condition directive ကို <code>v-for</code> directive နဲ့သုံးတဲ့အခါမှာ နှစ်မျိုးအသုံးပြုနိုင်တယ်။ တစ်ခုက <code>v-for</code> directive မှာတစ်ခါတည်းသုံးတာရယ်၊ နောက်တစ်ခုက <code>v-for</code> directive သုံးပြီးမှ သုံးတာရယ်။ <code>v-for</code> directive မှာသုံးမယ်ဆိုရင်
+<pre>
+    <code class="language-vue">
+      &lt;li v-for="item in items" v-if="item.success"&gt;
+       &lt;span&gt;{{item.message}}&lt;/span&gt;
+      &lt;/li&gt;
+    </code>
+</pre>
+ဆိုပြီးသုံးနိုင်တယ်။ <code>v-for</code> directive ပြီးမှ သုံးမယ်ဆိုရင်
+<pre>
+    <code class="language-vue">
+      &lt;li v-for="item in items"&gt;
+       &lt;span v-if="item.success"&gt;{{item.message}}&lt;/span&gt;
+      &lt;/li&gt;
+    </code>
+</pre>
+ဆိုပြီးသုံးနိုင်တယ်။
 ### Composition API 
 Compositon API ဆိုတာ vue ရဲ့ API function တွေကို import လုပ်ပြီးအသုံးပြုရတဲ့ Components တွေဖြစ်ပါတယ်။
 
