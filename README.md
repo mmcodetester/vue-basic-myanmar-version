@@ -8,7 +8,7 @@
 
 ### declarative rendering
 1. extends with HTML standard templates
-2. allows declarative describe HTML output based on javascript state 
+2. allows declarative describe HTML output based on javascript state
 
 ### reactive
 1. automatically tracks JavaScript state changes
@@ -19,31 +19,31 @@ Vue Js ဟာ UI element နဲ့ Javascript Data Modal တို့ကို �
 
 ### Using vue from CDN
 HTML page တွေမှာ Vue ကို CDN ကနေအသုံးပြုလိုတဲ့အခါ vue ရဲ့ package ကို HTML page ရဲ့ &lt;script&gt; tag ကနေခေါ်ပြီးအသုံးပြုရမှာဖြစ်ပါတယ်။
-#### usage 
+#### usage
 <pre>
   <code class="language-js" style="margin-left:-140px;">
     &lt;script src="https://unpkg.com/vue@3/dist/vue.global.js"&gt;&lt;/script&gt;
   </code>
 </pre>
 
-#### example 
+#### example
 #### index.html
 <pre>
   <code class="language-html" style="margin-left:-140px;">
     &lt;!DOCTYPE html&gt;
       &lt;html lang="en"&gt;      
-      &lt;head&gt; 
-          &lt;meta charset="UTF-8"&gt; 
-          &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; 
-          &lt;title&gt; Document&lt;/title&gt; 
+      &lt;head&gt;
+          &lt;meta charset="UTF-8"&gt;
+          &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+          &lt;title&gt; Document&lt;/title&gt;
       &lt;/head&gt;      
       &lt;body&gt;       
-          &lt;div id="app"&gt; 
+          &lt;div id="app"&gt;
               {{count}}
-          &lt;/div&gt; 
+          &lt;/div&gt;
           // from CDN
-          &lt;script src="https://unpkg.com/vue@3/dist/vue.global.js"&gt; &lt;/script&gt; 
-          &lt;script&gt; 
+          &lt;script src="https://unpkg.com/vue@3/dist/vue.global.js"&gt; &lt;/script&gt;
+          &lt;script&gt;
               const { createApp } = Vue;
               createApp({
                   data() {
@@ -52,12 +52,12 @@ HTML page တွေမှာ Vue ကို CDN ကနေအသုံးပြု
                       }
                   },
               }).mount('#app')
-          &lt;/script&gt; 
+          &lt;/script&gt;
       &lt;/body&gt;       
-    &lt;/html&gt; 
+    &lt;/html&gt;
   </code>
 </pre>
-#### အထက်ပါ example မှာဆိုရင် vue ရဲ့ CDN ကို  &lt;script src="https://unpkg.com/vue@3/dist/vue.global.js"&gt; &lt;/script&gt; tag နဲ့ ခေါ်သုံးထားတာဖြစ်ပြီးတော့ ၎င်း CDN ကို HTML page ကနေသိဖို့ဆိုရင်  &lt;script&gt; tag နောက်တစ်ခုကနေ vue ရဲ့ api function ဖြစ်တဲ့ createApp ကို import လုပ်ပေးရမယ်။ အဲ့ဒီ crateApp ကနေ &lt;div&gt; ရဲ့  Id (#app) ကို mount လုပ်ပေးရမှာဖြစ်ပါတယ်။ 
+#### အထက်ပါ example မှာဆိုရင် vue ရဲ့ CDN ကို  &lt;script src="https://unpkg.com/vue@3/dist/vue.global.js"&gt; &lt;/script&gt; tag နဲ့ ခေါ်သုံးထားတာဖြစ်ပြီးတော့ ၎င်း CDN ကို HTML page ကနေသိဖို့ဆိုရင်  &lt;script&gt; tag နောက်တစ်ခုကနေ vue ရဲ့ api function ဖြစ်တဲ့ createApp ကို import လုပ်ပေးရမယ်။ အဲ့ဒီ crateApp ကနေ &lt;div&gt; ရဲ့  Id (#app) ကို mount လုပ်ပေးရမှာဖြစ်ပါတယ်။
 
 #### Attribute Declaration (Variable Declaration)
 #### vue မှာ string၊ integer၊ List အစရှိတဲ့ varablesတွေကို declare လုပ်လိုတဲ့အခါ data function ရဲ့ retun value ထဲမှာ declare လုပ်ပေးရမှာဖြစ်ပါတယ်။
@@ -81,10 +81,10 @@ HTML page တွေမှာ Vue ကို CDN ကနေအသုံးပြု
 <pre>
   <code class="language-html" style="margin-left:-140px;">    
     //HTML
-    &lt;div id="app"&gt; 
+    &lt;div id="app"&gt;
       {{message}}
-    &lt;/div&gt; 
-    
+    &lt;/div&gt;
+
     //Script
     &lt;script&gt;         
     data() {
@@ -101,30 +101,30 @@ HTML page တွေမှာ Vue ကို CDN ကနေအသုံးပြု
   <code class="language-html">
     //False
     &lt;div id=" {{id}}"&gt;&lt;/div&gt;  
-    
+
     //True
     &lt;div v-bind:id="id"&gt;&lt;/div&gt;  
     //short hand
-     &lt;div :id="id"&gt;&lt;/div&gt; 
+     &lt;div :id="id"&gt;&lt;/div&gt;
   </code>
 </pre>
 
 #### Colon ( : ) နဲ့ စတဲ့ Attribute ဟာ ပုံမှန် HTML attributes ရေးနည်းတွေနဲ့ ကွဲပြားနေပါလိမ့်မယ်။ ဒါပေမယ့် ၎င်း Colon attribute ဟာ vue js ကနေ support ပေးထားတဲ့ valid character attribute ဖြစ်ပြီး Browser က မှန်မှန်ကန်ကန်နဲ့ parse လုပ်ပေးနိုင်ပါတယ်။ Colon ( : )  တစ်နည်းအားဖြင့် Short Hand Syntax ဟာ Vue Developers တွေ ယေဘုလျအသုံးများတဲ့ Syntax တစ်ခုဖြစ်ပါတယ်။
 <pre>
   <code class="language-html">
-    &lt;div :id="id"&gt;&lt;/div&gt; 
+    &lt;div :id="id"&gt;&lt;/div&gt;
   </code>
 </pre>
 
-### Boolean Attribute 
-Boolean Attribute ဆိုတာ element တစ်ခုရဲ့ true/false vlaue ကိုညွှန်ပြတဲ့ attribute တစ်ခုဖြစ်ပါတယ်။ 
+### Boolean Attribute
+Boolean Attribute ဆိုတာ element တစ်ခုရဲ့ true/false vlaue ကိုညွှန်ပြတဲ့ attribute တစ်ခုဖြစ်ပါတယ်။
 Example
 <pre>
   <code class="language-html">
     //true
-    &lt;div disabled="true"&gt;&lt;/div&gt; 
+    &lt;div disabled="true"&gt;&lt;/div&gt;
     //false
-    &lt;div disabled="false"&gt;&lt;/div&gt; 
+    &lt;div disabled="false"&gt;&lt;/div&gt;
   </code>
 </pre>
 Boolean Attributes တွေကို <code>:disabled</code> ၊ <code>v-if</code> အစရှိတဲ့ condition attributes တွေမှာ အသုံးပြုကြပါတယ်။
@@ -133,8 +133,8 @@ Boolean Attributes တွေကို <code>:disabled</code> ၊ <code>v-if</cod
   <code class="language-html">
     &lt;template&gt;
     //button is disabled
-      &lt;button :disabled="isDisabled"&gt;Save&lt;/button&gt; 
-    &lt;/template&gt; 
+      &lt;button :disabled="isDisabled"&gt;Save&lt;/button&gt;
+    &lt;/template&gt;
     &lt;script&gt;
       export default{
         data(){
@@ -143,16 +143,16 @@ Boolean Attributes တွေကို <code>:disabled</code> ၊ <code>v-if</cod
           }
         }
       }
-    &lt;/script&gt; 
+    &lt;/script&gt;
   </code>
 </pre>
 #### Example ( <code>v-if</code> )
 <pre>
   <code class="language-html">
     &lt;template&gt;
-      &lt;button v-if="success"&gt;OK&lt;/button&gt; 
-      &lt;button v-else &gt;Try Again&lt;/button&gt; 
-    &lt;/template&gt; 
+      &lt;button v-if="success"&gt;OK&lt;/button&gt;
+      &lt;button v-else &gt;Try Again&lt;/button&gt;
+    &lt;/template&gt;
     &lt;script&gt;
       export default{
         data(){
@@ -161,7 +161,7 @@ Boolean Attributes တွေကို <code>:disabled</code> ၊ <code>v-if</cod
           }
         }
       }
-    &lt;/script&gt; 
+    &lt;/script&gt;
   </code>
 </pre>
 
@@ -187,7 +187,7 @@ Boolean Attributes တွေကို <code>:disabled</code> ၊ <code>v-if</cod
        }
      }
     &lt;/script&gt;
-     //output 
+     //output
      Foo
      Bar
    </code>
@@ -234,7 +234,7 @@ Boolean Attributes တွေကို <code>:disabled</code> ၊ <code>v-if</cod
 #### example
 <pre>
   <code class="language-js">
-    //vue template 
+    //vue template
        &lt;li v-for="(value,key,index) in person"&gt;
         {{ index }} , {{key}}: {{value}}
       &lt;/li&gt;
@@ -248,7 +248,7 @@ Boolean Attributes တွေကို <code>:disabled</code> ၊ <code>v-if</cod
     0,name:Alex
   </code>
 </pre>
-#### v-for with v-if
+#### <code>v-for</code> with <code>v-if</code>
 <code>v-if</code> condition directive ကို <code>v-for</code> directive နဲ့သုံးတဲ့အခါမှာ နှစ်မျိုးအသုံးပြုနိုင်တယ်။ တစ်ခုက <code>v-for</code> directive မှာတစ်ခါတည်းသုံးတာရယ်၊ နောက်တစ်ခုက <code>v-for</code> directive သုံးပြီးမှ သုံးတာရယ်။ <code>v-for</code> directive မှာသုံးမယ်ဆိုရင်
 <pre>
     <code class="language-vue">
@@ -266,10 +266,10 @@ Boolean Attributes တွေကို <code>:disabled</code> ၊ <code>v-if</cod
     </code>
 </pre>
 ဆိုပြီးသုံးနိုင်တယ်။
-### Composition API 
+### Composition API
 Compositon API ဆိုတာ vue ရဲ့ API function တွေကို import လုပ်ပြီးအသုံးပြုရတဲ့ Components တွေဖြစ်ပါတယ်။
 
-#### example 
+#### example
 <pre>
   <code class="language-js" style="margin-left:-140px;">
     import {ref} from 'vue'  
@@ -285,10 +285,10 @@ Single File Components (SFCs) တွေမှာဆိုရင် composition a
         import {ref} from 'vue'  
       //declare count value as 0 by using api function
         const counter=ref(0);     
-    </script> 
+    </script>
      //vue template
       <template>
-        //render count value 
+        //render count value
         <p>counter value: {{count}}<p>
         //increase count value 1 after clicking button
         <input type='button' value='Increment' @click='count++'>
@@ -299,17 +299,17 @@ Single File Components (SFCs) တွေမှာဆိုရင် composition a
 <pre>
   <code class="language-js" style="margin-left:-140px;">
     &lt;template&gt;
-    
+
       &lt;h4&gt;Vue Composition API&lt;/h4&gt;
       &lt;p&gt;&#123;&#123; count &#125;&#125; &lt;/p&gt;
       &lt;button class="btn btn-sm btn-outline-primary me-2" @click="increment"&gt;Increment&lt;/button&gt;
       &lt;button class="btn btn-sm btn-outline-primary me-2" @click="decrement"&gt;Decrement&lt;/button&gt;
-    
+
     &lt;/template&gt;
-    
+
     &lt;script&gt;
       import {ref} from 'vue'
-      export default &#123; 
+      export default &#123;
         name: 'CounterApp'
         setup()&#123;
           const count=ref(0);
@@ -328,11 +328,11 @@ Single File Components (SFCs) တွေမှာဆိုရင် composition a
             decrement
           }
         &#125;
-      &#125; 
+      &#125;
     &lt;/script&gt;
   </code>
 </pre>
-            
+
 ### option api
 <pre>
                 <code class="language-js" style="margin-left:-140px;">
@@ -343,7 +343,7 @@ Single File Components (SFCs) တွေမှာဆိုရင် composition a
                         &lt;button class="btn btn-sm btn-outline-primary me-2" @click="decrement"&gt;Decrement&lt;/button&gt;
                     &lt;/template&gt;
                     &lt;script&gt;
-                        export default &#123; 
+                        export default &#123;
                             name: 'CounterApp'
                             data()&#123;                                
                                 //data and function must return for tracking state change
@@ -355,7 +355,7 @@ Single File Components (SFCs) တွေမှာဆိုရင် composition a
 
                             },
                             methods:{
-                                //functions 
+                                //functions
                                 increment(){
                                     this.count++;
                                 },
@@ -363,7 +363,7 @@ Single File Components (SFCs) တွေမှာဆိုရင် composition a
                                     this.count--;
                                 }
                             }
-                        &#125; 
+                        &#125;
                     &lt;/script&gt;
                 </code>
             </pre>
