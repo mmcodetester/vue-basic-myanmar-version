@@ -310,8 +310,6 @@ Single File Components (SFCs) တွေမှာဆိုရင် composition a
       <template>
         //render count value
         <p>counter value: {{count}}<p>
-        //increase count value 1 after clicking button
-        <input type='button' value='Increment' @click='count++'>
       </template>
   </code>
 </pre>
