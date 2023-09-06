@@ -31,16 +31,17 @@ Vue Js ဟာ UI element နဲ့ Javascript Data Modal တို့ကို �
 
     (vue 3)
     1.1 onBeforeCreate: Called before the component instance is created.
-    1.1 onCreated: Called after the component instance is created.
+    1.2 onCreated: Called after the component instance is created.
 #### 2.  mount
     (vue 2)
-    1.1 beforeMount: Triggered just before the component is inserted into the DOM.
-    1.2 mounted: Called once the component is inserted into the DOM. Ideal for initial DOM manipulation and API interactions.
+    2.1 beforeMount: Triggered just before the component is inserted into the DOM.
+    2.2 mounted: Called once the component is inserted into the DOM. Ideal for initial DOM manipulation and API interactions.
 
     (vue 3)
-    1.1 onBeforeMount: Called before the component is mounted to the DOM.
-    1.1 onMounted: Called after the component is mounted.
+    2.1 onBeforeMount: Called before the component is mounted to the DOM.
+    2.2 onMounted: Called after the component is mounted.
 #### 3.  update
+
 #### 4.  Destruction
 
 ### Using vue from CDN
