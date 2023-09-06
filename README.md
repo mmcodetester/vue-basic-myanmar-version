@@ -41,7 +41,12 @@ Vue Js ဟာ UI element နဲ့ Javascript Data Modal တို့ကို �
     2.1 onBeforeMount: Called before the component is mounted to the DOM.
     2.2 onMounted: Called after the component is mounted.
 #### 3.  update
-
+    (vue 2)
+    3.1 beforeUpdate: Called before the component is re-rendered due to data changes. Actions before an update can be performed.
+    3.2 updated: Triggered after the component has been re-rendered. Suitable for DOM manipulations that rely on updated data
+    (vue 3)
+    3.1 onBeforeUpdate: Called before data changes trigger a re-render.
+    3.2 onUpdated: called after the component is updated.
 #### 4.  Destruction
 
 ### Using vue from CDN
