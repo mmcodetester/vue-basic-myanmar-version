@@ -48,6 +48,19 @@ Vue Js ဟာ UI element နဲ့ Javascript Data Modal တို့ကို �
     3.1 onBeforeUpdate: Called before data changes trigger a re-render.
     3.2 onUpdated: called after the component is updated.
 #### 4.  Destruction
+    (vue 2)
+    4.1 beforeDestroy: Called before a component is about to be destroyed. Cleanup tasks such as cancelling timers or event listeners can be done.
+    4.2 destroyed: Executed after a component has been destroyed, and all its data and watchers have been cleared.
+
+    (vue 3)
+    onBeforeUnmount: Called before the component is unmounted.
+    onUnmounted: Called after the component is unmounted.
+#### 5. Error Handling
+    (vue 2)
+    5.1 errorCaptured: Called when an error occurs in any child component or during rendering. Allows capturing and handling errors in the component tree.
+
+    (vue 3)
+    5.1 This hook is called when an error is caught in any child component. It's used for error handling and is not a direct equivalent of any Vue 2.x hook.
 
 ### Using vue from CDN
 HTML page တွေမှာ Vue ကို CDN ကနေအသုံးပြုလိုတဲ့အခါ vue ရဲ့ package ကို HTML page ရဲ့ &lt;script&gt; tag ကနေခေါ်ပြီးအသုံးပြုရမှာဖြစ်ပါတယ်။
