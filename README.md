@@ -24,7 +24,7 @@ Vue JS က Virtual DOM ကို အသုံးပြုထားတယ်။ V
 Vue Js ဟာ UI element နဲ့ Javascript Data Modal တို့ကို အလိုအလျောက် Synchronization ပြုလုပ်ပေးထားတဲ့ two way data binding concept ကို အသုံးပြုထားပါတယ်။ ဆိုလိုတာကတော့ UI element မှာ တစ်ခုခုအပြောင်းအလဲဖြစ်တာနဲ့ Data Modal ကလဲ Update ဖြစ်မှာဖြစ်သလို၊ Data Modal မှာတစ်ခုခုအပြောင်းအလဲဖြစ်တာနဲ့ UI element ကလဲ အလိုအလျှောက် Update ဖြစ်သွားမှာဖြစ်ပါတယ်။
 
 ### Vue Components Lifecycle Hooks
-#### 1.  create
+#### 1.  Create
     (vue 2)
     1.1 beforeCreated: Executed before the component instance is initialized. Data and events are not set yet.
     1.2 created: Called after the component instance has been created. Data observation, events and computed properties are set yet.
@@ -32,7 +32,7 @@ Vue Js ဟာ UI element နဲ့ Javascript Data Modal တို့ကို �
     (vue 3)
     1.1 onBeforeCreate: Called before the component instance is created.
     1.2 onCreated: Called after the component instance is created.
-#### 2.  mount
+#### 2.  Mount
     (vue 2)
     2.1 beforeMount: Triggered just before the component is inserted into the DOM.
     2.2 mounted: Called once the component is inserted into the DOM. Ideal for initial DOM manipulation and API interactions.
@@ -40,7 +40,7 @@ Vue Js ဟာ UI element နဲ့ Javascript Data Modal တို့ကို �
     (vue 3)
     2.1 onBeforeMount: Called before the component is mounted to the DOM.
     2.2 onMounted: Called after the component is mounted.
-#### 3.  update
+#### 3.  Update
     (vue 2)
     3.1 beforeUpdate: Called before the component is re-rendered due to data changes. Actions before an update can be performed.
     3.2 updated: Triggered after the component has been re-rendered. Suitable for DOM manipulations that rely on updated data
