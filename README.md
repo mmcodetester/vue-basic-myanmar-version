@@ -25,10 +25,11 @@ Vue Js ဟာ UI element နဲ့ Javascript Data Modal တို့ကို �
 
 ### Vue Components Lifecycle Hooks
 #### 1.  create
-    #### (vue 2)
+    (vue 2)
     1.1 beforeCreated: Executed before the component instance is initialized. Data and events are not set yet.
     1.2 created: Called after the component instance has been created. Data observation, events and computed properties are set yet.
-    #### (vue 3)
+    
+    (vue 3)
     1.1 onBeforeCreate: Called before the component instance is created.
     1.1 created: Called after the component instance is created.
 2.  mount
