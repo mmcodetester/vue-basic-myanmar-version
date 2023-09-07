@@ -444,6 +444,10 @@ https://github.com/mmcodetester/vue-basic-myanmar-version/assets/72187529/935ad2
   </code>
 </pre>
 
+
+https://github.com/mmcodetester/vue-basic-myanmar-version/assets/72187529/cb1e4d2e-cb0d-46ee-8861-86c14238d05a
+
+
 <pre>
     <code class="language-js" style="margin-left:-140px;">
         &lt;template&gt;
