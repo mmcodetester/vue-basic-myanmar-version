@@ -212,7 +212,7 @@ Boolean Attributes တွေကို <code>:disabled</code> ၊ <code>v-if</cod
 
 ### List Rendering
 ### v-for
- Vue Js မှာ Arry List တွေကို Render လုပ်တဲ့အခါ <code>v-for</code> directive ကို အသုံးပြုရမှာဖြစ်ပါတယ်။ <code>v-for</code> direvtive မှာဆိုရင် <code>item in items</code> ဆိုတဲ့ Special syntax ကိုအသုံးပြုရမှာဖြစ်ပြီး <code>items</code>က data array ဖြစ်ပြီး <code>item</code> ကတော့ items array ထဲက alias တစ်ခုဖြစ်ပါတယ်။ <code>v-for</code> directive ဟာ C# Programming Language မှာဆိုရင် for loop လိုမျိုး List ကို Looping ပတ်ခြင်းဖြစ်ပါတယ်။
+ Vue Js မှာ Arry List တွေကို Render လုပ်တဲ့အခါ <code>v-for</code> directive ကို အသုံးပြုရမှာဖြစ်ပါတယ်။ <code>v-for</code> direvtive မှာဆိုရင် <code>item in items</code> ဆိုတဲ့ Special syntax ကိုအသုံးပြုရမှာဖြစ်ပါတယ်။ <code>items</code>က data array ဖြစ်ပြီး <code>item</code> ကတော့ items array ထဲက alias တစ်ခုဖြစ်ပါတယ်။ <code>v-for</code> directive ဟာ C# Programming Language မှာဆိုရင် for loop လိုမျိုး List ကို Looping ပတ်ခြင်းဖြစ်ပါတယ်။
  #### example
  <pre>
    <code>
