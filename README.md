@@ -415,6 +415,11 @@ Single File Components (SFCs) တွေမှာဆိုရင် composition a
     &lt;/script&gt;
   </code>
 </pre>
+
+
+https://github.com/mmcodetester/vue-basic-myanmar-version/assets/72187529/935ad281-da4e-463f-8e60-1ed557c8fb0b
+
+
 ### option api
 <pre>
     <code class="language-js" style="margin-left:-140px;">
