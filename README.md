@@ -23,7 +23,7 @@ Vue JS က Virtual DOM ကို အသုံးပြုထားတယ်။ V
 ### Two Way Data Binding
 Vue Js ဟာ UI element နဲ့ Javascript Data Modal တို့ကို အလိုအလျောက် Synchronization ပြုလုပ်ပေးထားတဲ့ two way data binding concept ကို အသုံးပြုထားပါတယ်။ ဆိုလိုတာကတော့ UI element မှာ တစ်ခုခုအပြောင်းအလဲဖြစ်တာနဲ့ Data Modal ကလဲ Update ဖြစ်မှာဖြစ်သလို၊ Data Modal မှာတစ်ခုခုအပြောင်းအလဲဖြစ်တာနဲ့ UI element ကလဲ အလိုအလျှောက် Update ဖြစ်သွားမှာဖြစ်ပါတယ်။
 
-### Vue Components Lifecycle Hooks
+## Vue Components Lifecycle Hooks
 #### 1.  Create
     (vue 2)
     1.1 beforeCreated: Executed before the component instance is initialized. Data and events are not set yet.
@@ -119,7 +119,7 @@ HTML page တွေမှာ Vue ကို CDN ကနေအသုံးပြု
   </code>
 </pre>
 
-#### Attribute Binding
+## Attribute Binding
 #### vue js မှာ data တွေကို Binding  လုပ်တဲ့အခါ double curly brackets (also called Mustaches) ' {{ }} ' ကိုအသုံးပြုပြီး Bind ရမှာဖြစ်ပါတယ်။
 
 #### example
@@ -161,7 +161,7 @@ HTML page တွေမှာ Vue ကို CDN ကနေအသုံးပြု
   </code>
 </pre>
 
-### Boolean Attribute
+## Boolean Attribute
 Boolean Attribute ဆိုတာ element တစ်ခုရဲ့ true/false vlaue ကိုညွှန်ပြတဲ့ attribute တစ်ခုဖြစ်ပါတယ်။
 Example
 <pre>
@@ -210,7 +210,7 @@ Boolean Attributes တွေကို <code>:disabled</code> ၊ <code>v-if</cod
   </code>
 </pre>
 
-### List Rendering
+## List Rendering
 ### v-for
  Vue Js မှာ Arry List တွေကို Render လုပ်တဲ့အခါ <code>v-for</code> directive ကို အသုံးပြုရမှာဖြစ်ပါတယ်။ <code>v-for</code> direvtive မှာဆိုရင် <code>item in items</code> ဆိုတဲ့ Special syntax ကိုအသုံးပြုရမှာဖြစ်ပါတယ်။ <code>items</code>က data array ဖြစ်ပြီး <code>item</code> ကတော့ items array ထဲက alias တစ်ခုဖြစ်ပါတယ်။ <code>v-for</code> directive ဟာ C# Programming Language မှာဆိုရင် for loop လိုမျိုး List ကို Looping ပတ်ခြင်းဖြစ်ပါတယ်။
  #### example
