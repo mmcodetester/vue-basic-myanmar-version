@@ -447,7 +447,31 @@ https://github.com/mmcodetester/vue-basic-myanmar-version/assets/72187529/935ad2
 
 https://github.com/mmcodetester/vue-basic-myanmar-version/assets/72187529/cb1e4d2e-cb0d-46ee-8861-86c14238d05a
 
-
+### Created
+Created က component instance တွေ create လုပ်ပြီးတဲ့အခါ စပြီးအလုပ်လုပ်တယ်။
+### example
+<pre>
+  <code class="language-template">
+      &lt;template&gt;
+        &lt;p&gt;{{message}}&lt;/p&gt;
+      &lt;/template&gt;
+      &lt;script&gt;
+          export default &#123;
+            data(){
+              return{
+                message:'Vue JS !'
+              }
+            },
+            created(){
+              this.message="Vue JS application"
+              console.log(this.message);
+            }
+          &#125;
+      &lt;/script&gt;
+  </code>
+</pre>
+### Mounted
+Mounted  က component တွေကို DOM ထဲထည့်ပြီးတဲ့အချိန်မှ  စပြီးအလုပ်လုပ်တယ်။
 <pre>
     <code class="language-js" style="margin-left:-140px;">
         &lt;template&gt;
