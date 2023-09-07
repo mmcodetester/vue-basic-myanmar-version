@@ -421,7 +421,7 @@ https://github.com/mmcodetester/vue-basic-myanmar-version/assets/72187529/935ad2
 
 
 ### Option API
- <code>data</code>၊ <code>methods</code>၊ <code>mounted</code> အစရှိတဲ့ Object တစ်ခုရဲ့ Option API တွေကိုအသုံးပြုပြီး Component Logic တွေကို Define ပြုလုပ်နိုင်ပါတယ်၊
+<code>data</code>၊ <code>methods</code>၊ <code>mounted</code> အစရှိတဲ့ Object တစ်ခုရဲ့ Option API တွေကိုအသုံးပြုပြီး Component Logic တွေကို Define ပြုလုပ်နိုင်ပါတယ်၊ Option တွေကနေ Define လုပ်ထားတဲ့ properties တွေကို function တွေကနေ <code>this</code> keyword ကိုသုံးပြီး ပြန်လည်အသုံးပြုရမှာဖြစ်ပါတယ်။
 <pre>
     <code class="language-js" style="margin-left:-140px;">
         &lt;template&gt;
