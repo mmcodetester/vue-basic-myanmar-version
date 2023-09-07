@@ -435,6 +435,9 @@ https://github.com/mmcodetester/vue-basic-myanmar-version/assets/72187529/935ad2
               return{
                 message:'Vue JS !'
               }
+            },
+            mounted(){
+              console.log(this.message);
             }
           &#125;
       &lt;/script&gt;
