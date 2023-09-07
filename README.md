@@ -471,6 +471,13 @@ Created က component instance တွေ create လုပ်ပြီးတဲ�
   </code>
 </pre>
 အထက်ပါ example မှာဆိုရင် output က <code>Vue JS application</code> ဆိုပြီးထွက်မယ်။ data function ရဲ့ return value ထဲမှာ message ကို <code>Vue JS !</code> လို့ assign လုပ်ထားတယ်ဆိုပေမယ့် message က component တွေ create မလုပ်ပြီးခင်မှာပဲ  <code>Vue JS !</code> လို့ရှိနေပြီး component တွေ create လုပ်ပြီးသွားတဲ့အခါ created function ထဲကိုရောက်သွားတယ်။ အဲ့ဒီ created ထဲမှာ <code>this.message="Vue JS application"</code> ဆိုပြီး assign လုပ်လိုက်တဲ့အတွက်ကြောင့် message ဟာ <code>Vue JS application</code> ဖြစ်သွားပြီး UI ကို update လုပ်ပေးလိုက်တယ်။
+
+
+
+https://github.com/mmcodetester/vue-basic-myanmar-version/assets/72187529/e2e6b6cf-0f72-4871-9b94-14dc5ddf2871
+
+
+
 ### Mounted
 Mounted  က component တွေကို DOM ထဲထည့်ပြီးတဲ့အချိန်မှ  စပြီးအလုပ်လုပ်တယ်။
 <pre>
