@@ -420,7 +420,8 @@ Single File Components (SFCs) တွေမှာဆိုရင် composition a
 https://github.com/mmcodetester/vue-basic-myanmar-version/assets/72187529/935ad281-da4e-463f-8e60-1ed557c8fb0b
 
 
-### option api
+### Option API
+ <code>data</code>၊ <code>methods</code>၊ <code>mounted</code> အစရှိတဲ့ Object တစ်ခုရဲ့ Option API တွေကိုအသုံးပြုပြီး Component Logic တွေကို Define ပြုလုပ်နိုင်ပါတယ်၊
 <pre>
     <code class="language-js" style="margin-left:-140px;">
         &lt;template&gt;
