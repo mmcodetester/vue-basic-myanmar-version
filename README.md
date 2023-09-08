@@ -511,7 +511,8 @@ Mounted  က component တွေကို DOM ထဲထည့်ပြီးတ�
 
 https://github.com/mmcodetester/vue-basic-myanmar-version/assets/72187529/b429d33a-5cf5-4ddf-8f11-a5cac5c23534
 
-
+### updated 
+Vue မှာ data state တွေကို track လုပ်နေပြီးတော့ state တစ်ခုခုပြောင်းသွားတိုင်းမှာ updated ကသိနေမယ်။
 
 <pre>
     <code class="language-js" style="margin-left:-140px;">
