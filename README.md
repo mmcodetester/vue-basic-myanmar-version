@@ -447,6 +447,38 @@ https://github.com/mmcodetester/vue-basic-myanmar-version/assets/72187529/935ad2
 
 https://github.com/mmcodetester/vue-basic-myanmar-version/assets/72187529/cb1e4d2e-cb0d-46ee-8861-86c14238d05a
 
+## <code>v-model</code>
+Option Api ထဲက fuction တွေအကြောင်းမပြောခင်မှာ tow way data binding ကို implement လုပ်ပေးတဲ့ <code>v-model</code> directive အကြောင်းကို ပထမဆုံးသိထားရမယ်။  <code>v-model</code> ဆိုတာ Form input value၊ option value အစရှိတဲ့ input element တွေနဲ့ component data တွေကြားကို binding လုပ်ပေးတဲ့ directive တစ်ခုပဲဖြစ်တယ်။
+### 1. Data Binding
+Vue components မှာ component data ကို input element ထဲမှာ Bind တဲ့အခါ <code>v-model</code> directive ကို အသုံးပြုပြီး Binding လုပ်ပေးရတယ်။
+### example
+<pre>
+    <code class="language-template">
+        &lt;template&gt;
+            &lt;<input type="text" v-model="message"&gt;
+        &lt;/template&gt;
+    </code>
+</pre>
+### 2. Two Way Binding
+<code>v-model</code> directive က input element မှာတစ်ခုခု အပြောင်းအလဲဖြစ်တာနဲ့ component data ကိုလဲ အလိုအလျှောက်ပြောင်းလဲပေးပြီး component data က တစ်ခုခုအပြောင်းအလဲဖြစ်တာနဲ့ input element ကို Update လုပ်ပေးတဲ့ tow way data binding directive တစ်ခုဖြစ်တယ်။
+### example
+<pre>
+    <code class="language-template">
+        &lt;template&gt;
+            &lt;p&gt;{{message}}&lt;/p&gt;
+            &lt;<input type="text" v-model="message"&gt;
+        &lt;/template&gt;
+        &lt;script&gt;
+            export default{
+                data(){
+                    return{
+                        message:'Two Way Binding'
+                    }        
+                }
+            }
+        &lt;/script&gt;
+    </code>
+</pre>
 ### Created
 Created က component instance တွေ create လုပ်ပြီးတဲ့အခါ စပြီးအလုပ်လုပ်တယ်။
 ### example
