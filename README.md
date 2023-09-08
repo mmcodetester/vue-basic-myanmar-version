@@ -480,6 +480,32 @@ https://github.com/mmcodetester/vue-basic-myanmar-version/assets/72187529/e2e6b6
 
 ### Mounted
 Mounted  က component တွေကို DOM ထဲထည့်ပြီးတဲ့အချိန်မှ  စပြီးအလုပ်လုပ်တယ်။
+### example
+<pre>
+  <code class="language-template">
+      &lt;template&gt;
+        &lt;p&gt;{{message}}&lt;/p&gt;
+      &lt;/template&gt;
+      &lt;script&gt;
+          export default &#123;
+            data(){
+              return{
+                message:'Vue JS !'
+              }
+            },
+            created(){
+              this.message="Vue JS application created"
+              console.log(this.message);
+            },
+            mounted(){
+              this.message="Vue JS application mounted"
+              console.log(this.message);
+            }
+          &#125;
+      &lt;/script&gt;
+  </code>
+</pre>
+အထက်ပါ example မှာဆိုရင် ပထမဆုံး data ထဲမှာ message က <code>Vue JS !</code>  ဆိုပြီး assign လုပ်ထားတယ်။ Component တွေကို initialize လုပ်ပြီးတဲ့အချိန်မှာ created function ထဲကိုရောက်သွားပြီး အဲ့ဒီ function ထဲမှာ <code>this.message="Vue JS application created"</code> ဆိုပြီး message ကို assign ပြန်လုပ်လိုက်တဲ့အတွက်ကြောင့် message က <code>Vue JS application created</code> ဆိုပြီးဖြစ်သွားမယ်။ created function အလုပ်လုပ်ပြီးသွားတဲ့အခါ vue က component တွေကို DOM ထဲထည့်လိုက်ပြီးတော့ mounted function ကစပြီးအလုပ်လုပ်ပြီ။ mounted ထဲမှာ <code>this.message="Vue JS application mounted"</code> ဆိုပြီး assign လုပ်လိုက်တဲ့အတွက်ကြောင့် message ရဲ့ data change သွားပြီးတော့ virtual dom ကနေ UI ကို <code>Vue JS application mounted</code> update သွားလုပ်ပေးလိုက်တယ်။
 <pre>
     <code class="language-js" style="margin-left:-140px;">
         &lt;template&gt;
