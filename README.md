@@ -479,6 +479,13 @@ Vue components မှာ component data ကို input element ထဲမှာ 
         &lt;/script&gt;
     </code>
 </pre>
+
+
+
+https://github.com/mmcodetester/vue-basic-myanmar-version/assets/72187529/92bba612-1b8c-45c7-a251-5132cfdc25ba
+
+
+
 ### Created
 Created က component instance တွေ create လုပ်ပြီးတဲ့အခါ စပြီးအလုပ်လုပ်တယ်။
 ### example
