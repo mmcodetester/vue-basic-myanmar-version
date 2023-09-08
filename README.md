@@ -455,7 +455,7 @@ Vue components မှာ component data ကို input element ထဲမှာ 
 <pre>
     <code class="language-template">
         &lt;template&gt;
-            &lt;<input type="text" v-model="message"&gt;
+            &lt;input type="text" v-model="message"&gt;
         &lt;/template&gt;
     </code>
 </pre>
@@ -466,7 +466,7 @@ Vue components မှာ component data ကို input element ထဲမှာ 
     <code class="language-template">
         &lt;template&gt;
             &lt;p&gt;{{message}}&lt;/p&gt;
-            &lt;<input type="text" v-model="message"&gt;
+            &lt;input type="text" v-model="message"&gt;
         &lt;/template&gt;
         &lt;script&gt;
             export default{
