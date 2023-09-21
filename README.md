@@ -694,36 +694,3 @@ https://github.com/mmcodetester/vue-basic-myanmar-version/assets/72187529/9f39f0
 ## Keep Alive
 <code>KeepAlive</code> 
 
-<pre>
-    <code class="language-js" style="margin-left:-140px;">
-        &lt;template&gt;
-        &lt;h4&gt;Vue Option API&lt;/h4&gt;
-        &lt;p&gt;&#123;&#123; count &#125;&#125; &lt;/p&gt;
-        &lt;button class="btn btn-sm btn-outline-primary me-2" @click="increment"&gt;Increment&lt;/button&gt;
-        &lt;button class="btn btn-sm btn-outline-primary me-2" @click="decrement"&gt;Decrement&lt;/button&gt;
-        &lt;/template&gt;
-        &lt;script&gt;
-            export default &#123;
-                name: 'CounterApp'
-                data()&#123;                                
-                //data and function must return for tracking state change
-                    return{
-                        count:0
-                    }
-                &#125;
-                created(){
-
-                },
-                methods:{
-                    //functions
-                    increment(){
-                      this.count++;
-                    },
-                    decrement(){
-                        this.count--;
-                    }
-                }
-            &#125;
-        &lt;/script&gt;
-    </code>
-</pre>
