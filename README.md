@@ -265,7 +265,7 @@ Boolean Attributes တွေကို <code>:disabled</code> ၊ <code>v-if</cod
 
 ### <code>v-for</code> with Object
 <code>v-for</code> directive မှာ Object တစ်ခုရဲ့  value တင်မဟုတ်ပဲ key ကိုပါ ထပ်ဆင့်ဖော်ပြလိုတဲ့အခါ <code>(value,key,index) in item</code> syntax ကိုအသုံးပြုရမှာဖြစ်ပါတယ်။
-#### ဥပမာ person ဆိုတဲ့ object တစ်ခုမှာ id, name, age ဆိုတဲ့ Fiels တွေပါတယ်ဆိုပါစို့ <code>id</code> က key ဖြစ်ပြီး 1 က value ဖြစ်တယ်။ <code>name</code> က key ဖြစ်ပြီး Alex က value ဖြစ်တယ်။ တစ်နည်းပြောရရင် object တစ်ခုဟာ key,value pair နဲ့ create လုပ်ထားတာဖြစ်တယ်။
+ဥပမာ person ဆိုတဲ့ object တစ်ခုမှာ id, name, age ဆိုတဲ့ Fiels တွေပါတယ်ဆိုပါစို့ <code>id</code> က key ဖြစ်ပြီး 1 က value ဖြစ်တယ်။ <code>name</code> က key ဖြစ်ပြီး Alex က value ဖြစ်တယ်။ တစ်နည်းပြောရရင် object တစ်ခုဟာ key,value pair နဲ့ create လုပ်ထားတာဖြစ်တယ်။
 <pre>
   <code class="language-js">
     const person={
@@ -327,7 +327,7 @@ Node တစ်ခုချင်းစီတိုင်းရဲ့ element ide
 ### <code>v-model</code> directive
 <code>v-model</code> directive ဟာ vue ရဲ့ tow way data binding  diretive ဖြစ်ပြီး component တွေရဲ့ date ကို bind တဲ့အခါမှာအသုံးပြုပါတယ်။
 data ထဲက declare လုပ်တထား value တွေကို text field သို့မဟုတ် select box ၊ radio button အစရှိတဲ့ element ထဲမှာ <code>v-model</code> directive နဲ့ bind ထားပြီး အဲ့ဒီ text field၊ radio button မှာရှိတဲ့ ui value က changes ဖြစ်သွားရင် data ကလဲ လိုက်ပြီးပြောင်းလဲနေမယ် data က တစ်ခုခု changes ဖြစ်တာနဲ့ text field ၊ select box ၊ radio button စတဲ့ ui element value တွေကလဲ လိုက်ပြီးပြောင်းလဲနေမှာဖြစ်ပါတယ်။
-တစ်နည်းအားဖြင့် data မှာ changes ဖြစ်တာနဲ့ UI ကလဲ လိုက်ချိန်းမယ် ၊ UI က value changes ဖြစ်တာနဲ့ UI ကလဲသိနေမယ်။
+တစ်နည်းအားဖြင့် data မှာ changes ဖြစ်တာနဲ့ UI ကလဲ လိုက်ချိန်းမယ် ၊ UI က value changes ဖြစ်တာနဲ့ data ကလဲသိနေမယ်။
 #### example
 <pre>
     <code>
