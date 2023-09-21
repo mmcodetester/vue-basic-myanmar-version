@@ -488,8 +488,8 @@ Single File Components (SFCs) တွေမှာဆိုရင် composition a
       </template>
   </code>
 </pre>
-<code>&lt;script setup&gt;</code> ထဲမှာမရေးပဲ <code>&lt;script&gt;</code> ထဲမှာရေးမယ်ဆိုရင် <code>setup() {}</code> function ထဲမှာ ရေးရမှာဖြစ်ပါတယ်။
-[Vue SFC Playground](https://play.vuejs.org/)
+<code>&lt;script setup&gt;</code> ထဲမှာမရေးပဲ <code>&lt;script&gt;</code> ထဲမှာရေးမယ်ဆိုရင် <code>setup() {}</code> function ထဲမှာ ရေးရမှာဖြစ်ပါတယ်။[Vue SFC Playground](https://play.vuejs.org/)
+
 <pre>
   <code class="language-js" style="margin-left:-140px;">
     &lt;template&gt;
@@ -499,18 +499,19 @@ Single File Components (SFCs) တွေမှာဆိုရင် composition a
 
     &lt;script&gt;
       import {ref} from 'vue'
-      export default &#123;
-        setup()&#123;
+      export default{
+        setup(){
           const count=ref(0);
           return{
             count,
           }
-        &#125;
-      &#125;
+      }
     &lt;/script&gt;
   </code>
 </pre>
+
 [Vue SFC Playground](https://play.vuejs.org/)
+
 <pre>
   <code class="language-js" style="margin-left:-140px;">
     &lt;template&gt;
