@@ -557,7 +557,7 @@ Vue မှာ data state တွေကို track လုပ်နေပြီး
 <pre>
     <code>
         &lt;template&gt;
-          &lt;label&gt;number <input type="number" v-model="count">&lt;/label&gt;
+          &lt;label&gt;number &lt;input type="number" v-model="count"&gt;&lt;/label&gt;
         &lt;/template&gt;
         &lt;script&gt;
           export default{
