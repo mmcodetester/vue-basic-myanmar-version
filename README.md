@@ -313,7 +313,7 @@ Boolean Attributes တွေကို <code>:disabled</code> ၊ <code>v-if</cod
 ဆိုပြီးသုံးနိုင်တယ်။ အထက်ပါ example နှစ်ခုစလုံးမှာ <code>v-if</code> directive နဲ့စစ်ထားတဲ့ item က success ဖြစ်မှသာ message ကို ပြပေးမှာဖြစ်ပါတယ်။ရေးနည်းပဲကွာပြီး ထွက်လာမယ့် Output ကတော့ အတူတူပါပဲ။
 
 ## Maintaining State With <code>key</code>
-#### Vue က 'in-place path' stragegy ကို default အနေဖြင့် အသုံးပြုပြီး element list ကို <code>v-for</code> directive နဲ့ Update လုပ်တယ်။ Data items တွေ changes ဖြစ်သွားတဲ့အခါ အဲ့ဒီ data တွေကို Match လုပ်ဖို့ DOM element ကို ရွှေ့သွားမယ့်အစား Vue က element တွေကို တစ်နေရာတည်းမှာ စုစည်းလိုက်တယ်။ပြီးတော့ ဘယ် element ကတော့ render လုပ်မယ်ဆိုတာကိုဆုံးဖြတ်ပြီး render လုပ်ပေးတယ်။ အဲ့လို default mode နဲ့ အသုံးပြုခြင်းက ကောင်းပေမယ့် temporaty DOM ဟာ child component state အပေါ်မှာမှီခိုနေတဲ့အခါ သုံးရန်မသင့်တော်ပါ။
+Vue က 'in-place path' stragegy ကို default အနေဖြင့် အသုံးပြုပြီး element list ကို <code>v-for</code> directive နဲ့ Update လုပ်တယ်။ Data items တွေ changes ဖြစ်သွားတဲ့အခါ အဲ့ဒီ data တွေကို Match လုပ်ဖို့ DOM element ကို ရွှေ့သွားမယ့်အစား Vue က element တွေကို တစ်နေရာတည်းမှာ စုစည်းလိုက်တယ်။ပြီးတော့ ဘယ် element ကတော့ render လုပ်မယ်ဆိုတာကိုဆုံးဖြတ်ပြီး render လုပ်ပေးတယ်။ အဲ့လို default mode နဲ့ အသုံးပြုခြင်းက ကောင်းပေမယ့် temporaty DOM ဟာ child component state အပေါ်မှာမှီခိုနေတဲ့အခါ သုံးရန်မသင့်တော်ပါ။
 
 #### Node တစ်ခုချင်းစီတိုင်းရဲ့ element identity ကို vue ကနေ track လုပ်ထားပြီး Maintain လုပ်ပေးရမှာဖြစ်တယ်။ အဲ့လို track လုပ်ဖို့ဆိုရင် Unique ဖြစ်တဲ့ <code>key</code> ကိုအသုံးပြုပြီး Maintain လုပ်ပေးရမှာဖြစ်ပါတယ်။
 #### example
