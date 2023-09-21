@@ -325,6 +325,28 @@ Boolean Attributes တွေကို <code>:disabled</code> ၊ <code>v-if</cod
   </code>
 </pre>
 
+### <code>v-bind</code> directive
+<code>v-bind</code> directive ကို  radio button လိုမျိုး element value တွေကို binding ပြုလုပ်တဲ့အခါမှာအသုံးပြုတယ်။ vue ဟာ element value တွေကို double curley brace နဲ့ binding လုပ်ဖို့ခွင့်မပြုထားပဲ <code>v-bind</code> directive နဲ့သာ binding ပြုလုပ်ဖို့ Support ပေးထားတာဖြစ်ပါတယ်။
+<pre>
+    <code>
+        &lt;template&gt;
+         &lt;p&gt;Component Value: {{gender}}&lt;/p&gt;
+            &lt;label&gt;&lt;input type="radio" v-model="gender" v-bind:value="false"&gt;False&lt;/label&gt;
+            &lt;label&gt;&lt;input type="radio" v-model="gender" v-bind:value="true"&gt;True&lt;/label&gt;
+        &lt;/template&gt;
+        &lt;script&gt;
+            export default{
+            data(){
+                return{
+                    gender:false,
+                }
+            }
+        }
+        &lt;/script&gt;
+    </code>
+</pre>
+
+### <code>v-on</code> directive
 
 ## API Style
 Vue JS မှာ Composition Api နဲ့ Option Api ဆိုပြီး component နှစ်မျိုးရှိပါတယ်။
@@ -578,7 +600,7 @@ Vue မှာ data state တွေကို track လုပ်နေပြီး
 
 https://github.com/mmcodetester/vue-basic-myanmar-version/assets/72187529/9f39f06a-da8b-4880-9fd3-6850b512327f
 
-
+## Props
 ## Event
 ## Keep Alive
 <code>KeepAlive</code> 
