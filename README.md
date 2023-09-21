@@ -556,10 +556,10 @@ Vue မှာ data state တွေကို track လုပ်နေပြီး
 ### Example
 
 <code>
-    <template>
-      <label>number <input type="number" v-model="count"></label>
-    </template>
-    <script>
+    &lt;template&gt;
+      &lt;label&gt;number <input type="number" v-model="count">&lt;/label&gt;
+    &lt;/template&gt;
+    &lt;script&gt;
       export default{
         data(){
           return{
@@ -570,7 +570,7 @@ Vue မှာ data state တွေကို track လုပ်နေပြီး
           alert(this.count)
         }
       }
-    </script>
+    &lt;/script&gt;
 
 </code>
 
