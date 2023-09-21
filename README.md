@@ -378,7 +378,39 @@ https://github.com/mmcodetester/vue-basic-myanmar-version/assets/72187529/977aaa
 
 ### <code>v-on</code> directive
 <code>v-on</code> directive ဟာ <code>v-model</code> ၊ <code>v-bind</code> တို့လို vue ရဲ့  build-in directive တစ်ခုဖြစ်ပြီး element တွေရဲ့  click , keypress , enter , prevent အစရှိတဲ့ event တွေကို listen လုပ်တဲ့ directive တစ်ခုဖြစ်ပါတယ်။ပြောရရင် form ကို sumbit လုပ်ဖို့ enter ခလုတ်နှိပ်လို့ရတဲ့ event မျိုး ၊ button ကို  click နှိပ်တာနဲ့ function တစ်ခုကို ခေါ်တာမျိုး textfield ထဲမှာ စာတစ်လုံးရိုက်လိုက်တာနဲ့ ရိုက်လိုက်တဲ့ key က textfield ထဲမှာ မပါစေချင်လို့ pervent လုပ်တဲ့ function ကိုခေါ်ထားတာမျိုးတွေမှာ အသုံးပြုပါတယ်။
-
+<pre>
+    <code>
+         &lt;template&gt;
+           &lt;p&gt;Name : {{name}} &lt;/p&gt;
+             &lt;p&gt;Can type Letters Only &lt;/p&gt;
+             &lt;label&gt;Name  &lt;input type="text" v-model="name" 
+                v-on:keypress="allowLettersOnly($event)" &gt; &lt;/label&gt;
+             &lt;p &gt;Enter Key Perss &lt;/p&gt;
+             &lt;input type="button" value="Save" v-on:keyup.enter="enterFunc" &gt;
+         &lt;/template&gt;
+        &lt;script&gt;
+            export default{
+            data(){
+                return{
+        
+                    gender:true,
+                    name:'Joseph'
+                }
+            },
+            methods:{
+                allowLettersOnly(e){
+                    let char = String.fromCharCode(e.keyCode); // Get the character
+                    if (/^[A-Z a-z]+$/.test(char)) return true; // Match with regex 
+                    else e.preventDefault(); // If not match, don't add to input text
+                },
+                enterFunc(){
+                    alert('enterkey press')
+                }
+            }
+        }
+       &lt;/script&gt;
+    </code>
+</pre>
 
 
 https://github.com/mmcodetester/vue-basic-myanmar-version/assets/72187529/1a4532ef-7ac1-440e-a74b-1b6bd5cbd843
