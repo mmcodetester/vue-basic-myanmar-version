@@ -120,7 +120,7 @@ HTML page တွေမှာ Vue ကို CDN ကနေအသုံးပြု
 </pre>
 
 ## Attribute Binding
-#### vue js မှာ data တွေကို Binding  လုပ်တဲ့အခါ double curly brackets (also called Mustaches) ' {{ }} ' ကိုအသုံးပြုပြီး Bind ရမှာဖြစ်ပါတယ်။
+vue js မှာ data တွေကို Binding  လုပ်တဲ့အခါ double curly brackets (also called Mustaches) ' {{ }} ' ကိုအသုံးပြုပြီး Bind ရမှာဖြစ်ပါတယ်။
 
 #### example
 <pre>
@@ -154,7 +154,7 @@ HTML page တွေမှာ Vue ကို CDN ကနေအသုံးပြု
   </code>
 </pre>
 
-#### Colon ( : ) နဲ့ စတဲ့ Attribute ဟာ ပုံမှန် HTML attributes ရေးနည်းတွေနဲ့ ကွဲပြားနေပါလိမ့်မယ်။ ဒါပေမယ့် ၎င်း Colon attribute ဟာ vue js ကနေ support ပေးထားတဲ့ valid character attribute ဖြစ်ပြီး Browser က မှန်မှန်ကန်ကန်နဲ့ parse လုပ်ပေးနိုင်ပါတယ်။ Colon ( : )  တစ်နည်းအားဖြင့် Short Hand Syntax ဟာ Vue Developers တွေ ယေဘုလျအသုံးများတဲ့ Syntax တစ်ခုဖြစ်ပါတယ်။
+Colon ( : ) နဲ့ စတဲ့ Attribute ဟာ ပုံမှန် HTML attributes ရေးနည်းတွေနဲ့ ကွဲပြားနေပါလိမ့်မယ်။ ဒါပေမယ့် ၎င်း Colon attribute ဟာ vue js ကနေ support ပေးထားတဲ့ valid character attribute ဖြစ်ပြီး Browser က မှန်မှန်ကန်ကန်နဲ့ parse လုပ်ပေးနိုင်ပါတယ်။ Colon ( : )  တစ်နည်းအားဖြင့် Short Hand Syntax ဟာ Vue Developers တွေ ယေဘုလျအသုံးများတဲ့ Syntax တစ်ခုဖြစ်ပါတယ်။
 <pre>
   <code class="language-html">
     &lt;div :id="id"&gt;&lt;/div&gt;
@@ -275,7 +275,7 @@ Boolean Attributes တွေကို <code>:disabled</code> ၊ <code>v-if</cod
     }
   </code>
 </pre>
-#### object ရဲ့ <code>value</code> မဟုတ်ပဲ <code>key</code> ကိုပါဖော်ပြလိုတယ်ဆိုရင် <code>(value,key,index) in item</code> ဆိုတဲ့ Special Syantax ကို အသုံးပြုရမှာဖြစ်ပါတယ်။
+object ရဲ့ <code>value</code> မဟုတ်ပဲ <code>key</code> ကိုပါဖော်ပြလိုတယ်ဆိုရင် <code>(value,key,index) in item</code> ဆိုတဲ့ Special Syantax ကို အသုံးပြုရမှာဖြစ်ပါတယ်။
 #### example
 <pre>
   <code class="language-js">
