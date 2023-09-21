@@ -351,6 +351,8 @@ data ထဲက declare လုပ်တထား value တွေကို text fi
         &lt;/script&gt;
     </code>
 </pre>
+https://github.com/mmcodetester/vue-basic-myanmar-version/assets/72187529/977aaa68-a389-40ca-ac2c-0f01f10b8d65
+
 ### <code>v-bind</code> directive
 <code>v-bind</code> directive ကို  radio button လိုမျိုး element value တွေကို binding ပြုလုပ်တဲ့အခါမှာအသုံးပြုတယ်။ vue ဟာ element value တွေကို double curley brace နဲ့ binding လုပ်ဖို့ခွင့်မပြုထားပဲ <code>v-bind</code> directive နဲ့သာ binding ပြုလုပ်ဖို့ Support ပေးထားတာဖြစ်ပါတယ်။
 <pre>
@@ -372,7 +374,36 @@ data ထဲက declare လုပ်တထား value တွေကို text fi
     </code>
 </pre>
 
+https://github.com/mmcodetester/vue-basic-myanmar-version/assets/72187529/977aaa68-a389-40ca-ac2c-0f01f10b8d65
+
 ### <code>v-on</code> directive
+<code>v-on</code> directive ဟာ <code>v-model</code> ၊ <code>v-bind</code> တို့လို vue ရဲ့  build-in directive တစ်ခုဖြစ်ပြီး element တွေရဲ့  click , keypress , enter , prevent အစရှိတဲ့ event တွေကို listen လုပ်တဲ့ directive တစ်ခုဖြစ်ပါတယ်။ပြောရရင် form ကို sumbit လုပ်ဖို့ enter ခလုတ်နှိပ်လို့ရတဲ့ event မျိုး ၊ button ကို  click နှိပ်တာနဲ့ function တစ်ခုကို ခေါ်တာမျိုး textfield ထဲမှာ စာတစ်လုံးရိုက်လိုက်တာနဲ့ ရိုက်လိုက်တဲ့ key က textfield ထဲမှာ မပါစေချင်လို့ pervent လုပ်တဲ့ function ကိုခေါ်ထားတာမျိုးတွေမှာ အသုံးပြုပါတယ်။
+
+
+
+https://github.com/mmcodetester/vue-basic-myanmar-version/assets/72187529/1a4532ef-7ac1-440e-a74b-1b6bd5cbd843
+
+<code>v-on</code> direct ကို short-hand နဲ့ရေးမယ်ဆိုရင် <code>@</code> sign နဲ့ရေးနိုင်ပါတယ်။
+
+### Example
+<pre>
+    <code>
+        @keypress
+        @click
+        @keyup.enter
+    </code>
+</pre>
+<pre>
+    <code>
+         &lt;template&gt;
+         &lt;/template&gt;
+                &lt;label&gt;Name &lt;input type="text" v-model="name"  @keypress="allowLettersOnly($event)"&gt;&lt;/label&gt;
+         &lt;script&gt;
+         &lt;/script&gt;
+    </code>
+</pre>
+
+
 
 ## API Style
 Vue JS မှာ Composition Api နဲ့ Option Api ဆိုပြီး component နှစ်မျိုးရှိပါတယ်။
