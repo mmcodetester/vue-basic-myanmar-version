@@ -315,7 +315,7 @@ Boolean Attributes တွေကို <code>:disabled</code> ၊ <code>v-if</cod
 ## Maintaining State With <code>key</code>
 Vue က 'in-place path' stragegy ကို default အနေဖြင့် အသုံးပြုပြီး element list ကို <code>v-for</code> directive နဲ့ Update လုပ်တယ်။ Data items တွေ changes ဖြစ်သွားတဲ့အခါ အဲ့ဒီ data တွေကို Match လုပ်ဖို့ DOM element ကို ရွှေ့သွားမယ့်အစား Vue က element တွေကို တစ်နေရာတည်းမှာ စုစည်းလိုက်တယ်။ပြီးတော့ ဘယ် element ကတော့ render လုပ်မယ်ဆိုတာကိုဆုံးဖြတ်ပြီး render လုပ်ပေးတယ်။ အဲ့လို default mode နဲ့ အသုံးပြုခြင်းက ကောင်းပေမယ့် temporaty DOM ဟာ child component state အပေါ်မှာမှီခိုနေတဲ့အခါ သုံးရန်မသင့်တော်ပါ။
 
-#### Node တစ်ခုချင်းစီတိုင်းရဲ့ element identity ကို vue ကနေ track လုပ်ထားပြီး Maintain လုပ်ပေးရမှာဖြစ်တယ်။ အဲ့လို track လုပ်ဖို့ဆိုရင် Unique ဖြစ်တဲ့ <code>key</code> ကိုအသုံးပြုပြီး Maintain လုပ်ပေးရမှာဖြစ်ပါတယ်။
+Node တစ်ခုချင်းစီတိုင်းရဲ့ element identity ကို vue ကနေ track လုပ်ထားပြီး Maintain လုပ်ပေးရမှာဖြစ်တယ်။ အဲ့လို track လုပ်ဖို့ဆိုရင် Unique ဖြစ်တဲ့ <code>key</code> ကိုအသုံးပြုပြီး Maintain လုပ်ပေးရမှာဖြစ်ပါတယ်။
 #### example
 <pre>
   <code class="language-template">
@@ -324,7 +324,33 @@ Vue က 'in-place path' stragegy ကို default အနေဖြင့် အ�
     &lt;/div&gt;
   </code>
 </pre>
-
+### <code>v-model</code> directive
+<code>v-model</code> directive ဟာ vue ရဲ့ tow way data binding  diretive ဖြစ်ပြီး component တွေရဲ့ date ကို bind တဲ့အခါမှာအသုံးပြုပါတယ်။
+data ထဲက declare လုပ်တထား value တွေကို text field သို့မဟုတ် select box ၊ radio button အစရှိတဲ့ element ထဲမှာ <code>v-model</code> directive နဲ့ bind ထားပြီး အဲ့ဒီ text field၊ radio button မှာရှိတဲ့ ui value က changes ဖြစ်သွားရင် data ကလဲ လိုက်ပြီးပြောင်းလဲနေမယ် data က တစ်ခုခု changes ဖြစ်တာနဲ့ text field ၊ select box ၊ radio button စတဲ့ ui element value တွေကလဲ လိုက်ပြီးပြောင်းလဲနေမှာဖြစ်ပါတယ်။
+တစ်နည်းအားဖြင့် data မှာ changes ဖြစ်တာနဲ့ UI ကလဲ လိုက်ချိန်းမယ် ၊ UI က value changes ဖြစ်တာနဲ့ UI ကလဲသိနေမယ်။
+#### example
+<pre>
+    <code>
+        &lt;template&gt;
+          &lt;p&gt;Name : {{name}}&lt;/p&gt;
+            &lt;label&gt;Name &lt;input type="text" v-model="name"&gt;&lt;/label&gt;
+         &lt;p&gt;Gender : {{gender}}&lt;/p&gt;
+              &lt;label&gt;&lt;input type="radio" v-model="gender" v-bind:value="false"&gt;False&lt;/label&gt;
+              &lt;label&gt;&lt;input type="radio" v-model="gender" v-bind:value="true"&gt;True&lt;/label&gt;
+        &lt;/template&gt;
+        
+        &lt;script&gt;
+            export default{
+            data(){
+                return{
+                    gender:false,
+                    name:'Joseph'
+                }
+            }
+        }
+        &lt;/script&gt;
+    </code>
+</pre>
 ### <code>v-bind</code> directive
 <code>v-bind</code> directive ကို  radio button လိုမျိုး element value တွေကို binding ပြုလုပ်တဲ့အခါမှာအသုံးပြုတယ်။ vue ဟာ element value တွေကို double curley brace နဲ့ binding လုပ်ဖို့ခွင့်မပြုထားပဲ <code>v-bind</code> directive နဲ့သာ binding ပြုလုပ်ဖို့ Support ပေးထားတာဖြစ်ပါတယ်။
 <pre>
