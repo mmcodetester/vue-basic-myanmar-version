@@ -575,6 +575,10 @@ Vue မှာ data state တွေကို track လုပ်နေပြီး
 </pre>
 
 
+
+https://github.com/mmcodetester/vue-basic-myanmar-version/assets/72187529/9f39f06a-da8b-4880-9fd3-6850b512327f
+
+
 ## Event
 ## Keep Alive
 <code>KeepAlive</code> 
