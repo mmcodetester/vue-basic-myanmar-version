@@ -145,7 +145,7 @@ vue js မှာ data တွေကို Binding  လုပ်တဲ့အခါ
   </code>
 </pre>
 
-#### Double Curly Brace ကို HTML Attributes တွေထဲမှာတိုက်ရိုက်အသုံးပြုပြီး Bind လို့မရပါ။ အသုံးပြုလိုပါက v-bind directive ဖြင့်အသုံးပြုရမှာဖြစ်ပါတယ်။
+Double Curly Brace ကို HTML Attributes တွေထဲမှာတိုက်ရိုက်အသုံးပြုပြီး Bind လို့မရပါ။ အသုံးပြုလိုပါက v-bind directive ဖြင့်အသုံးပြုရမှာဖြစ်ပါတယ်။
 [Vue SFC Playground](https://play.vuejs.org/)
 <pre>
   <code class="language-html">
