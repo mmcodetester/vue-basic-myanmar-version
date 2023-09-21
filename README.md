@@ -104,7 +104,7 @@ HTML page တွေမှာ Vue ကို CDN ကနေအသုံးပြု
 </pre>
 အထက်ပါ example မှာဆိုရင် vue ရဲ့ CDN ကို  &lt;script src="https://unpkg.com/vue@3/dist/vue.global.js"&gt; &lt;/script&gt; tag နဲ့ ခေါ်သုံးထားတာဖြစ်ပြီးတော့ ၎င်း CDN ကို HTML page ကနေသိဖို့ဆိုရင်  &lt;script&gt; tag နောက်တစ်ခုကနေ vue ရဲ့ api function ဖြစ်တဲ့ createApp ကို import လုပ်ပေးရမယ်။ အဲ့ဒီ crateApp ကနေ &lt;div&gt; ရဲ့  Id (#app) ကို mount လုပ်ပေးရမှာဖြစ်ပါတယ်။
 
-Vue js ကို အောက်ပါ Link မှတစ်ဆင့် Test ပြုလုပ်နိုင်ပါတယ်။
+Vue js ကို Vue SFC Playground Link မှတစ်ဆင့် Test ပြုလုပ်နိုင်ပါတယ်။
 [Vue SFC Playground](https://play.vuejs.org/)
 
 #### Attribute Declaration (Variable Declaration)
