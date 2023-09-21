@@ -104,6 +104,9 @@ HTML page တွေမှာ Vue ကို CDN ကနေအသုံးပြု
 </pre>
 အထက်ပါ example မှာဆိုရင် vue ရဲ့ CDN ကို  &lt;script src="https://unpkg.com/vue@3/dist/vue.global.js"&gt; &lt;/script&gt; tag နဲ့ ခေါ်သုံးထားတာဖြစ်ပြီးတော့ ၎င်း CDN ကို HTML page ကနေသိဖို့ဆိုရင်  &lt;script&gt; tag နောက်တစ်ခုကနေ vue ရဲ့ api function ဖြစ်တဲ့ createApp ကို import လုပ်ပေးရမယ်။ အဲ့ဒီ crateApp ကနေ &lt;div&gt; ရဲ့  Id (#app) ကို mount လုပ်ပေးရမှာဖြစ်ပါတယ်။
 
+Vue js ကို အောက်ပါ Link မှတစ်ဆင့် Test ပြုလုပ်နိုင်ပါတယ်။
+[Vue SFC Playground](https://play.vuejs.org/)
+
 #### Attribute Declaration (Variable Declaration)
 vue မှာ string၊ integer၊ List အစရှိတဲ့ varablesတွေကို declare လုပ်လိုတဲ့အခါ data function ရဲ့ return value ထဲမှာ declare လုပ်ပေးရမှာဖြစ်ပါတယ်။
 #### example
@@ -122,7 +125,8 @@ vue မှာ string၊ integer၊ List အစရှိတဲ့ varablesတွ�
 ## Attribute Binding
 vue js မှာ data တွေကို Binding  လုပ်တဲ့အခါ double curly brackets (also called Mustaches) ' {{ }} ' ကိုအသုံးပြုပြီး Bind ရမှာဖြစ်ပါတယ်။
 
-#### example
+#### example [Vue SFC Playground](https://play.vuejs.org/)
+
 <pre>
   <code class="language-html" style="margin-left:-140px;">    
     //HTML
@@ -142,6 +146,7 @@ vue js မှာ data တွေကို Binding  လုပ်တဲ့အခါ
 </pre>
 
 #### Double Curly Brace ကို HTML Attributes တွေထဲမှာတိုက်ရိုက်အသုံးပြုပြီး Bind လို့မရပါ။ အသုံးပြုလိုပါက v-bind directive ဖြင့်အသုံးပြုရမှာဖြစ်ပါတယ်။
+[Vue SFC Playground](https://play.vuejs.org/)
 <pre>
   <code class="language-html">
     //False
@@ -155,6 +160,7 @@ vue js မှာ data တွေကို Binding  လုပ်တဲ့အခါ
 </pre>
 
 Colon ( : ) နဲ့ စတဲ့ Attribute ဟာ ပုံမှန် HTML attributes ရေးနည်းတွေနဲ့ ကွဲပြားနေပါလိမ့်မယ်။ ဒါပေမယ့် ၎င်း Colon attribute ဟာ vue js ကနေ support ပေးထားတဲ့ valid character attribute ဖြစ်ပြီး Browser က မှန်မှန်ကန်ကန်နဲ့ parse လုပ်ပေးနိုင်ပါတယ်။ Colon ( : )  တစ်နည်းအားဖြင့် Short Hand Syntax ဟာ Vue Developers တွေ ယေဘုလျအသုံးများတဲ့ Syntax တစ်ခုဖြစ်ပါတယ်။
+[Vue SFC Playground](https://play.vuejs.org/)
 <pre>
   <code class="language-html">
     &lt;div :id="id"&gt;&lt;/div&gt;
@@ -164,6 +170,7 @@ Colon ( : ) နဲ့ စတဲ့ Attribute ဟာ ပုံမှန် HTML a
 ## Boolean Attribute
 Boolean Attribute ဆိုတာ element တစ်ခုရဲ့ true/false vlaue ကိုညွှန်ပြတဲ့ attribute တစ်ခုဖြစ်ပါတယ်။
 Example
+[Vue SFC Playground](https://play.vuejs.org/)
 <pre>
   <code class="language-html">
     //true
@@ -174,6 +181,7 @@ Example
 </pre>
 Boolean Attributes တွေကို <code>:disabled</code> ၊ <code>v-if</code> အစရှိတဲ့ condition attributes တွေမှာ အသုံးပြုကြပါတယ်။
 #### Example ( <code>:disabled</code> )
+[Vue SFC Playground](https://play.vuejs.org/)
 <pre>
   <code class="language-html">
     &lt;template&gt;
@@ -192,6 +200,7 @@ Boolean Attributes တွေကို <code>:disabled</code> ၊ <code>v-if</cod
   </code>
 </pre>
 #### Example ( <code>v-if</code> )
+[Vue SFC Playground](https://play.vuejs.org/)
 <pre>
   <code class="language-html">
     &lt;template&gt;
@@ -214,6 +223,7 @@ Boolean Attributes တွေကို <code>:disabled</code> ၊ <code>v-if</cod
 ### v-for
  Vue Js မှာ Arry List တွေကို Render လုပ်တဲ့အခါ <code>v-for</code> directive ကို အသုံးပြုရမှာဖြစ်ပါတယ်။ <code>v-for</code> direvtive မှာဆိုရင် <code>item in items</code> ဆိုတဲ့ Special syntax ကိုအသုံးပြုရမှာဖြစ်ပါတယ်။ <code>items</code>က data array ဖြစ်ပြီး <code>item</code> ကတော့ items array ထဲက alias တစ်ခုဖြစ်ပါတယ်။ <code>v-for</code> directive ဟာ C# Programming Language မှာဆိုရင် for loop လိုမျိုး List ကို Looping ပတ်ခြင်းဖြစ်ပါတယ်။
  #### example
+ [Vue SFC Playground](https://play.vuejs.org/)
  <pre>
    <code>
     &lt;template&gt;
@@ -239,6 +249,7 @@ Boolean Attributes တွေကို <code>:disabled</code> ၊ <code>v-if</cod
  </pre>
 <code>v-for</code> directive မှာ item ရဲ့ index ကို သိရှိလိုတဲ့အခါ <code>(item,index) in items</code> ဆိုပြီး အသုံးပြုရမှာဖြစ်ပါတယ်။
 #### example
+[Vue SFC Playground](https://play.vuejs.org/)
  <pre>
    <code>
     &lt;template&gt;
@@ -266,6 +277,7 @@ Boolean Attributes တွေကို <code>:disabled</code> ၊ <code>v-if</cod
 ### <code>v-for</code> with Object
 <code>v-for</code> directive မှာ Object တစ်ခုရဲ့  value တင်မဟုတ်ပဲ key ကိုပါ ထပ်ဆင့်ဖော်ပြလိုတဲ့အခါ <code>(value,key,index) in item</code> syntax ကိုအသုံးပြုရမှာဖြစ်ပါတယ်။
 ဥပမာ person ဆိုတဲ့ object တစ်ခုမှာ id, name, age ဆိုတဲ့ Fiels တွေပါတယ်ဆိုပါစို့ <code>id</code> က key ဖြစ်ပြီး 1 က value ဖြစ်တယ်။ <code>name</code> က key ဖြစ်ပြီး Alex က value ဖြစ်တယ်။ တစ်နည်းပြောရရင် object တစ်ခုဟာ key,value pair နဲ့ create လုပ်ထားတာဖြစ်တယ်။
+[Vue SFC Playground](https://play.vuejs.org/)
 <pre>
   <code class="language-js">
     const person={
@@ -277,6 +289,7 @@ Boolean Attributes တွေကို <code>:disabled</code> ၊ <code>v-if</cod
 </pre>
 object ရဲ့ <code>value</code> မဟုတ်ပဲ <code>key</code> ကိုပါဖော်ပြလိုတယ်ဆိုရင် <code>(value,key,index) in item</code> ဆိုတဲ့ Special Syantax ကို အသုံးပြုရမှာဖြစ်ပါတယ်။
 #### example
+[Vue SFC Playground](https://play.vuejs.org/)
 <pre>
   <code class="language-js">
     //vue template
@@ -303,6 +316,7 @@ object ရဲ့ <code>value</code> မဟုတ်ပဲ <code>key</code> က�
     </code>
 </pre>
 ဆိုပြီးသုံးနိုင်တယ်။ <code>v-for</code> directive ပြီးမှ သုံးမယ်ဆိုရင်
+[Vue SFC Playground](https://play.vuejs.org/)
 <pre>
     <code class="language-vue">
       &lt;li v-for="item in items"&gt;
@@ -317,6 +331,7 @@ Vue က 'in-place path' stragegy ကို default အနေဖြင့် အ�
 
 Node တစ်ခုချင်းစီတိုင်းရဲ့ element identity ကို vue ကနေ track လုပ်ထားပြီး Maintain လုပ်ပေးရမှာဖြစ်တယ်။ အဲ့လို track လုပ်ဖို့ဆိုရင် Unique ဖြစ်တဲ့ <code>key</code> ကိုအသုံးပြုပြီး Maintain လုပ်ပေးရမှာဖြစ်ပါတယ်။
 #### example
+[Vue SFC Playground](https://play.vuejs.org/)
 <pre>
   <code class="language-template">
     &lt;div v-for="item in items" :key="item.id"&gt;
@@ -329,6 +344,7 @@ Node တစ်ခုချင်းစီတိုင်းရဲ့ element ide
 data ထဲက declare လုပ်တထား value တွေကို text field သို့မဟုတ် select box ၊ radio button အစရှိတဲ့ element ထဲမှာ <code>v-model</code> directive နဲ့ bind ထားပြီး အဲ့ဒီ text field၊ radio button မှာရှိတဲ့ ui value က changes ဖြစ်သွားရင် data ကလဲ လိုက်ပြီးပြောင်းလဲနေမယ် data က တစ်ခုခု changes ဖြစ်တာနဲ့ text field ၊ select box ၊ radio button စတဲ့ ui element value တွေကလဲ လိုက်ပြီးပြောင်းလဲနေမှာဖြစ်ပါတယ်။
 တစ်နည်းအားဖြင့် data မှာ changes ဖြစ်တာနဲ့ UI ကလဲ လိုက်ချိန်းမယ် ၊ UI က value changes ဖြစ်တာနဲ့ data ကလဲသိနေမယ်။
 #### example
+[Vue SFC Playground](https://play.vuejs.org/)
 <pre>
     <code>
         &lt;template&gt;
@@ -355,6 +371,7 @@ https://github.com/mmcodetester/vue-basic-myanmar-version/assets/72187529/977aaa
 
 ### <code>v-bind</code> directive
 <code>v-bind</code> directive ကို  radio button လိုမျိုး element value တွေကို binding ပြုလုပ်တဲ့အခါမှာအသုံးပြုတယ်။ vue ဟာ element value တွေကို double curley brace နဲ့ binding လုပ်ဖို့ခွင့်မပြုထားပဲ <code>v-bind</code> directive နဲ့သာ binding ပြုလုပ်ဖို့ Support ပေးထားတာဖြစ်ပါတယ်။
+[Vue SFC Playground](https://play.vuejs.org/)
 <pre>
     <code>
         &lt;template&gt;
@@ -378,6 +395,7 @@ https://github.com/mmcodetester/vue-basic-myanmar-version/assets/72187529/977aaa
 
 ### <code>v-on</code> directive
 <code>v-on</code> directive ဟာ <code>v-model</code> ၊ <code>v-bind</code> တို့လို vue ရဲ့  build-in directive တစ်ခုဖြစ်ပြီး element တွေရဲ့  click , keypress , enter , prevent အစရှိတဲ့ event တွေကို listen လုပ်တဲ့ directive တစ်ခုဖြစ်ပါတယ်။ပြောရရင် form ကို sumbit လုပ်ဖို့ enter ခလုတ်နှိပ်လို့ရတဲ့ event မျိုး ၊ button ကို  click နှိပ်တာနဲ့ function တစ်ခုကို ခေါ်တာမျိုး textfield ထဲမှာ စာတစ်လုံးရိုက်လိုက်တာနဲ့ ရိုက်လိုက်တဲ့ key က textfield ထဲမှာ မပါစေချင်လို့ pervent လုပ်တဲ့ function ကိုခေါ်ထားတာမျိုးတွေမှာ အသုံးပြုပါတယ်။
+[Vue SFC Playground](https://play.vuejs.org/)
 <pre>
     <code>
          &lt;template&gt;
@@ -418,6 +436,7 @@ https://github.com/mmcodetester/vue-basic-myanmar-version/assets/72187529/1a4532
 <code>v-on</code> direct ကို short-hand နဲ့ရေးမယ်ဆိုရင် <code>@</code> sign နဲ့ရေးနိုင်ပါတယ်။
 
 ### Example
+[Vue SFC Playground](https://play.vuejs.org/)
 <pre>
     <code>
         @keypress
@@ -444,6 +463,7 @@ Vue JS မှာ Composition Api နဲ့ Option Api ဆိုပြီး comp
 Compositon API ဆိုတာ vue ရဲ့ API function တွေကို import လုပ်ပြီးအသုံးပြုရတဲ့ Components တွေဖြစ်ပါတယ်။
 
 #### example
+[Vue SFC Playground](https://play.vuejs.org/)
 <pre>
   <code class="language-js" style="margin-left:-140px;">
     import {ref} from 'vue'  
@@ -452,6 +472,7 @@ Compositon API ဆိုတာ vue ရဲ့ API function တွေကို imp
 </pre>
 #### usage
 Single File Components (SFCs) တွေမှာဆိုရင် composition api တွေကို &lt;script setup&gt; ထဲမှာရေးသားကြပါတယ်။
+[Vue SFC Playground](https://play.vuejs.org/)
 <pre>
   <code class="language-js" style="margin-left:-140px;">
     <script setup>
@@ -468,7 +489,7 @@ Single File Components (SFCs) တွေမှာဆိုရင် composition a
   </code>
 </pre>
 <code>&lt;script setup&gt;</code> ထဲမှာမရေးပဲ <code>&lt;script&gt;</code> ထဲမှာရေးမယ်ဆိုရင် <code>setup() {}</code> function ထဲမှာ ရေးရမှာဖြစ်ပါတယ်။
-
+[Vue SFC Playground](https://play.vuejs.org/)
 <pre>
   <code class="language-js" style="margin-left:-140px;">
     &lt;template&gt;
@@ -489,7 +510,7 @@ Single File Components (SFCs) တွေမှာဆိုရင် composition a
     &lt;/script&gt;
   </code>
 </pre>
-
+[Vue SFC Playground](https://play.vuejs.org/)
 <pre>
   <code class="language-js" style="margin-left:-140px;">
     &lt;template&gt;
@@ -535,6 +556,7 @@ https://github.com/mmcodetester/vue-basic-myanmar-version/assets/72187529/935ad2
 <code>data</code>၊ <code>methods</code>၊ <code>mounted</code> အစရှိတဲ့ Object တစ်ခုရဲ့ Option API တွေကိုအသုံးပြုပြီး Component Logic တွေကို Define ပြုလုပ်နိုင်ပါတယ်၊ Option တွေကနေ Define လုပ်ထားတဲ့ properties တွေကို function တွေကနေ <code>this</code> keyword ကိုသုံးပြီး ပြန်လည်အသုံးပြုရမှာဖြစ်ပါတယ်။
 
 ### example
+[Vue SFC Playground](https://play.vuejs.org/)
 <pre>
   <code class="language-template">
       &lt;template&gt;
@@ -563,6 +585,7 @@ Option Api ထဲက fuction တွေအကြောင်းမပြောခ
 ### 1. Data Binding
 Vue components မှာ component data ကို input element ထဲမှာ Bind တဲ့အခါ <code>v-model</code> directive ကို အသုံးပြုပြီး Binding လုပ်ပေးရတယ်။
 ### example
+[Vue SFC Playground](https://play.vuejs.org/)
 <pre>
     <code class="language-template">
         &lt;template&gt;
@@ -573,6 +596,7 @@ Vue components မှာ component data ကို input element ထဲမှာ 
 ### 2. Two Way Binding
 <code>v-model</code> directive က input element မှာတစ်ခုခု အပြောင်းအလဲဖြစ်တာနဲ့ component data ကိုလဲ အလိုအလျှောက်ပြောင်းလဲပေးပြီး component data က တစ်ခုခုအပြောင်းအလဲဖြစ်တာနဲ့ input element ကို Update လုပ်ပေးတဲ့ tow way data binding directive တစ်ခုဖြစ်တယ်။
 ### example
+[Vue SFC Playground](https://play.vuejs.org/)
 <pre>
     <code class="language-template">
         &lt;template&gt;
@@ -600,6 +624,7 @@ https://github.com/mmcodetester/vue-basic-myanmar-version/assets/72187529/92bba6
 ### Created
 Created က component instance တွေ create လုပ်ပြီးတဲ့အခါ စပြီးအလုပ်လုပ်တယ်။
 ### example
+[Vue SFC Playground](https://play.vuejs.org/)
 <pre>
   <code class="language-template">
       &lt;template&gt;
@@ -631,6 +656,7 @@ https://github.com/mmcodetester/vue-basic-myanmar-version/assets/72187529/e2e6b6
 ### Mounted
 Mounted  က component တွေကို DOM ထဲထည့်ပြီးတဲ့အချိန်မှ  စပြီးအလုပ်လုပ်တယ်။
 ### example
+[Vue SFC Playground](https://play.vuejs.org/)
 <pre>
   <code class="language-template">
       &lt;template&gt;
