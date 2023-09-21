@@ -553,6 +553,10 @@ https://github.com/mmcodetester/vue-basic-myanmar-version/assets/72187529/b429d3
 ### updated 
 Vue မှာ data state တွေကို track လုပ်နေပြီးတော့ state တစ်ခုခုပြောင်းသွားတိုင်းမှာ updated ကသိနေမယ်။
 
+## Event
+## Keep Alive
+<code>KeepAlive</code> 
+
 <pre>
     <code class="language-js" style="margin-left:-140px;">
         &lt;template&gt;
