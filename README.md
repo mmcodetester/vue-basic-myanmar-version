@@ -554,25 +554,26 @@ https://github.com/mmcodetester/vue-basic-myanmar-version/assets/72187529/b429d3
 Vue မှာ data state တွေကို track လုပ်နေပြီးတော့ state တစ်ခုခုပြောင်းသွားတိုင်းမှာ updated ကသိနေမယ်။
 ဥပမာ template ထဲမှာ number input box တစ်ခုရှိမယ် ‌အဲ့ဒီ nuber text box ရဲ့ ကို v-model directive နဲ့ count value ကို Bind ထားမယ်ပေါ့။ script ရဲ့ data ထဲမှာတော့ count value ကို 1 လို့ declare လုပ်ထားပြီး return ပြန်ထားမယ်။ အဲ့မှာ number box မှာ count value ပြောင်းတာနဲ့ data ရဲ့ count value ကလဲ two way data binding ကြောင့်ပြောင်းသွားမယ်။ အဲ့လိုပြောင်းသွားတာကို vue ရဲ့ တစ်ခြား component ကနေသိလိုတာဖြစ်ဖြစ် ကိုယ်တိုင်က အဲ့လိုပြောင်းလဲတဲ့အပေါ်မူတည်ပြီး function တစ်ခုခုကို အလုပ်လုပ်စေလိုတဲ့အခါ updated function ထဲမှာ ရေးရမှာဖြစ်တယ်။
 ### Example
-
-<code>
-    &lt;template&gt;
-      &lt;label&gt;number <input type="number" v-model="count">&lt;/label&gt;
-    &lt;/template&gt;
-    &lt;script&gt;
-      export default{
-        data(){
-          return{
-            count:0
+<pre>
+    <code>
+        &lt;template&gt;
+          &lt;label&gt;number <input type="number" v-model="count">&lt;/label&gt;
+        &lt;/template&gt;
+        &lt;script&gt;
+          export default{
+            data(){
+              return{
+                count:0
+              }
+            },
+            updated(){
+              alert(this.count)
+            }
           }
-        },
-        updated(){
-          alert(this.count)
-        }
-      }
-    &lt;/script&gt;
+        &lt;/script&gt;    
+    </code>
+</pre>
 
-</code>
 
 ## Event
 ## Keep Alive
