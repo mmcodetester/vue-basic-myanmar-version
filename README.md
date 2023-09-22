@@ -15,8 +15,20 @@
 2. efficiently updates the DOM when the state change
 
 ### Document Object Model (DOM)
-DOM (Document Object Model) ဆိုတာ Web Document အတွက် HTML,XML Document တို့လိုမျိုး tree-like structure programming interface တစ်ခုပဲဖြစ်ပါတယ်။ DOM ဟာ programs တွေ scripts တွေကို dynically access လုပ်ပေးပြီး၊ web document ရဲ့ content တွေ structure တွေ style တွေကို manipulate လုပ်ပေးနိုင်တယ်။ Vue Js ဟာ DOM ကိုသုံးထားပြီးတော့ UI ကို manipulate လုပ်ပြီး အလိုအလျှောက် Update လုပ်ပေးတဲ့  framework တစ်ခုဖြစ်တယ်။ Vue Js မှာ DOM က application's data နဲ့ UI ကို Synchronization လုပ်ပြီး changes တစ်ခုဖြစ်တာနဲ့ UI ရော data ကိုရော Update လုပ်ပေးတယ်။
-
+DOM (Document Object Model) ဆိုတာ Web Document အတွက် HTML,XML Document တို့လိုမျိုး tree-like structure programming interface တစ်ခုပဲဖြစ်ပါတယ်။ DOM ဟာ programs တွေ scripts တွေကို dynically access လုပ်ပေးပြီး၊ web document ရဲ့ content တွေ structure တွေ style တွေကို manipulate လုပ်ပေးနိုင်တယ်။ Vue Js ဟာ DOM ကိုသုံးထားပြီးတော့ UI ကို manipulate လုပ်နေတယ် ပြီးတော့ data state တစ်ခုခု changes ဖြစ်တိုင်းအလိုအလျှောက် Update လုပ်ပေးတဲ့  framework တစ်ခုဖြစ်တယ်။ Vue Js မှာ DOM က application's data နဲ့ UI ကို Synchronization လုပ်ပြီး changes တစ်ခုဖြစ်တာနဲ့ UI ရော data ကိုရော Update လုပ်ပေးတယ်။
+### Component Structure
+Vue js မှာ application တွေကို component တွေသုံးပြီး create လုပ်တယ်။ Components တွေဟာ reusable ဖြစ်တယ်၊ encapsulated units တွေဖြစ်တယ်။ Component တွေဟာ ကိုယ်ပိုင် template ၊ logic နဲ့ style တွေရှိတယ်။
+### Encapsulation
+Encapsulation is a way to restrict the direct access to some components of an object, so users cannot access state values for all of the variables of a particular object. Encapsulation can be used to hide both data members and data functions or methods associated with an instantiated class or object.
+### Template 
+vue ရဲံ့ Component တစ်ခုချင်းစီတိုင်းမှာ HTML structure ကို define လုပ်ပေးတဲ့ template တစ်ခုရှိတယ်။ အဲ့ဒီ template ထဲမှာဆိုရင် veu ရဲ့ သက်ဆိုင်ရာ directive တွေနဲ့ expression တွေပါဝင်တယ်။ ပြောရမယ်ဆိုရင် vue မှာ component တစ်ခု create လုပ်မယ်ဆိုရင် <code><template></template><code>ထဲမှာရေးရမယ်။ element တွေကို template အဖွင့်အပိတ်အတွင်းမှာရေးရမယ်။
+<pre>
+    <code>
+        <template>
+            &lt;p&gt; Hello VUE ! &lt;/p&gt;
+        </template>
+    </code>
+</pre>
 ### Virtual DOM
 Vue JS က Virtual DOM ကို အသုံးပြုထားတယ်။ Virtual DOM ဆိုတာ Real DOM ရဲ့ Lightweight copy တစ်ခုဖြစ်ပြီး UI changes တွေကို Track လုပ်နေတယ်။ Data တစ်ခုခု change သွားတိုင်းမှာ vue ကနေ Virtual DOM တစ်ခု create လုပ်ပြီး အရင်ရှိနေတဲ့ DOM ရဲ့ ခြားနားချက်ကို Compute လုပ်ပြီး  UI ကို updata လုပ်ပေးတယ်။
 
