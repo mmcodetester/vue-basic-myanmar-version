@@ -29,6 +29,9 @@ vue ရဲh Component တစ်ခုချင်းစီတိုင်းမ�
         &lt;/template&gt;
     </code>
 </pre>
+### Data State
+Vue JS မှာ data state ဆိုတာ UI နဲ့ data အကြား reactive ဖြစ်အောင်၊ ထိရောက်စွာ render လုပ်ပေးနိုင်အောင် ရှင်းရှင်းလင်းလင်းပိုင်းခြားပေးထားတဲ့ concept တစ်ခုပဲဖြစ်ပါတယ်။ Data ဆိုတာ component ရဲ့ initial state ဖြစ်ပြီး 'data' function ထဲမှာ return လုပ်ထားတဲ့ variables တွေ properties တွေဖြစ်ပါတယ်။ user input ကြောင့်ဖြစ်ဖြစ် api response ကြောင့်ဖြစ်ဖြစ် 'data'function ရဲ့အခြားပြင်ပ functionတွေကြောင့် data properties တွေ changes ဖြစ်သွားတာမျိုးကို state လို့ခေါ်ပါတယ်။ တစ်နည်းအားဖြင့် data state changes ဖြစ်တယ်ပေါ့။
+
 ### Virtual DOM
 Vue JS က Virtual DOM ကို အသုံးပြုထားတယ်။ Virtual DOM ဆိုတာ Real DOM ရဲ့ Lightweight copy တစ်ခုဖြစ်ပြီး UI changes တွေကို Track လုပ်နေတယ်။ Data တစ်ခုခု change သွားတိုင်းမှာ vue ကနေ Virtual DOM တစ်ခု create လုပ်ပြီး အရင်ရှိနေတဲ့ DOM ရဲ့ ခြားနားချက်ကို Compute လုပ်ပြီး  UI ကို updata လုပ်ပေးတယ်။
 
