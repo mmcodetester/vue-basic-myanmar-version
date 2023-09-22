@@ -21,7 +21,7 @@ Vue js မှာ application တွေကို component တွေသုံး�
 ### Encapsulation
 Encapsulation is a way to restrict the direct access to some components of an object, so users cannot access state values for all of the variables of a particular object. Encapsulation can be used to hide both data members and data functions or methods associated with an instantiated class or object.
 ### Template 
-vue ရဲံ့ Component တစ်ခုချင်းစီတိုင်းမှာ HTML structure ကို define လုပ်ပေးတဲ့ template တစ်ခုရှိတယ်။ အဲ့ဒီ template ထဲမှာဆိုရင် veu ရဲ့ သက်ဆိုင်ရာ directive တွေနဲ့ expression တွေပါဝင်တယ်။ ပြောရမယ်ဆိုရင် vue မှာ component တစ်ခု create လုပ်မယ်ဆိုရင် <code><template></template><code>ထဲမှာရေးရမယ်။ element တွေကို template အဖွင့်အပိတ်အတွင်းမှာရေးရမယ်။
+vue ရဲh Component တစ်ခုချင်းစီတိုင်းမှာ HTML structure ကို define လုပ်ပေးတဲ့ template တစ်ခုရှိတယ်။ အဲ့ဒီ template ထဲမှာဆိုရင် veu ရဲ့ သက်ဆိုင်ရာ directive တွေနဲ့ expression တွေပါဝင်တယ်။ ပြောရမယ်ဆိုရင် vue မှာ component တစ်ခု create လုပ်မယ်ဆိုရင် <code>&lt;ptemplate&gt;&lt;/ptemplate&gt;<code>ထဲမှာရေးရမယ်။ element တွေကို template အဖွင့်အပိတ်အတွင်းမှာရေးရမယ်။
 <pre>
     <code>
         <template>
