@@ -1,4 +1,4 @@
-![Mediamodifier-Design (1)](https://github.com/mmcodetester/vue-basic-myanmar-version/assets/72187529/7eeb9d06-c8ce-4919-9653-7b820cb43f47)![Mediamodifier-Design](https://github.com/mmcodetester/vue-basic-myanmar-version/assets/72187529/36056e10-7e68-4b9c-a29f-9439d1717cf5)# VUE JS MYANMAR
+# VUE JS MYANMAR
 
 ![Uploading<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
