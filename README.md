@@ -1,6 +1,6 @@
 # VUE JS MYANMAR
 Vue Js ကို Google ရဲ့ Former Engineer တစ်ယောက်ဖြစ်တဲ့ Evan You က create လုပ်ခဲ့ပြီး February 2014 မှာ public ကို release လုပ်ခဲ့တယ်။
-သူက Google မှာ အလုပ်လုပ်နေစဉ် 2013 မှာတည်းက vue js ကို create လုပ်နေခဲ့တယ်။ release လုပ်ပြီးနောက်ပိုင်းမှာ vue js က popular ဖြစ်လာခဲ့ပြီးတော့ UI တွေ Single File Application တွေ
+သူက Google မှာ အလုပ်လုပ်နေစဉ် 2013 မှာတည်းက vue js ကို create လုပ်နေခဲ့တယ်။ release လုပ်ပြီးနောက်ပိုင်းမှာ vue js က popular ဖြစ်လာခဲ့ပြီးတော့ UI တွေ Single Page Application တွေ
 create လုပ်တဲ့အခါ အသုံးများတဲ့ Javascript Framework တစ်ခုဖြစ်လာခဲ့တယ်။
 
 
