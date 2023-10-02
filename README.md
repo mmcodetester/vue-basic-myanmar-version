@@ -786,8 +786,11 @@ value or text changes ဖြစ်တဲ့အခါ parent component က value 
 </pre>
 
 Child Component 
+
 ![child-comp-event](https://github.com/mmcodetester/vue-basic-myanmar-version/assets/72187529/812c4ddc-67c6-4008-bc4e-279d0205c73f)
+
 Parent Component
+
 ![parent-comp-evt](https://github.com/mmcodetester/vue-basic-myanmar-version/assets/72187529/15bd6e66-1c47-4218-b3da-b7665a52ac27)
 
 
