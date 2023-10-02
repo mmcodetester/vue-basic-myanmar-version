@@ -75,7 +75,7 @@ Vue JS မှာ data state ဆိုတာ UI နဲ့ data အကြား re
 </pre>
 
 ### Virtual DOM
-Vue JS က Virtual DOM ကို အသုံးပြုထားတယ်။ Virtual DOM ဆိုတာ Real DOM ရဲ့ Lightweight copy တစ်ခုဖြစ်ပြီး UI changes တွေကို Track လုပ်နေတယ်။ Data တစ်ခုခု change သွားတိုင်းမှာ vue ကနေ Virtual DOM တစ်ခု create လုပ်ပြီး အရင်ရှိနေတဲ့ DOM ရဲ့ ခြားနားချက်ကို Compute လုပ်ပြီး  UI ကို updata လုပ်ပေးတယ်။
+Vue JS က Virtual DOM ကို အသုံးပြုထားတယ်။ Virtual DOM ဆိုတာ Real DOM ရဲ့ Lightweight copy တစ်ခုဖြစ်ပြီး UI changes တွေကို Track လုပ်နေတယ်။ Data တစ်ခုခု change သွားတိုင်းမှာ vue ကနေ Virtual DOM တစ်ခု create လုပ်ပြီး အရင်ရှိနေတဲ့ DOM ရဲ့ ခြားနားချက်ကို Compute လုပ်လိုက်ပြီး  UI ကို update လုပ်ပေးတယ်။
 
 ### Two Way Data Binding
 Vue Js ဟာ UI element နဲ့ Javascript Data Modal တို့ကို အလိုအလျောက် Synchronization ပြုလုပ်ပေးထားတဲ့ two way data binding concept ကို အသုံးပြုထားပါတယ်။ ဆိုလိုတာကတော့ UI element မှာ တစ်ခုခုအပြောင်းအလဲဖြစ်တာနဲ့ Data Modal ကလဲ Update ဖြစ်မှာဖြစ်သလို၊ Data Modal မှာတစ်ခုခုအပြောင်းအလဲဖြစ်တာနဲ့ UI element ကလဲ အလိုအလျှောက် Update ဖြစ်သွားမှာဖြစ်ပါတယ်။
