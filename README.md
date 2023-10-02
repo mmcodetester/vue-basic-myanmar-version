@@ -772,6 +772,25 @@ https://github.com/mmcodetester/vue-basic-myanmar-version/assets/72187529/9f39f0
 
 ## Props
 ## Event
+### custom event
+vue ရဲ့ $emit event ဆိုတာ child Component ကနေ parent component တွေဆီကို custom event တွေပို့ဖို့အတွက်အသုံးပြုတဲ့ function တစ်ခုဖြစ်ပါတယ်။
+၎င်း $emit event က parent နဲ့ child component ကြားမှာ data တွေ triggered actions တွေကို pass လုပ်နိုင်တဲ့အတွက်ကြောင့် parent နဲ့ child ကို ကောင်းကောင်း communicate လုပ်ပေးနိုင်တယ်။
+ဥပမာ- child component မှာ count value တစ်ခုရှိမယ်။ အဲ့ဒီ count value အချိန်းအပြောင်းဖြစ်တဲ့အခါမှာ parent က အဲ့ဒီ count တန်ဖိုးကို သိနေဖို့လိုတယ်ပေါ့။ အဲ့ဒီအချိန်မျိုးမှာ vue ရဲ့ custom event ဖြစ်တဲ့
+$event('event-name',payload) ကိုအသုံးပြုနိုင်တယ်။ တစ်နည်းအားဖြင့် parent component ထဲမှာ child component ကို ယူသုံးထားတယ်။ Component နှစ်ခုက ကွဲနေတဲ့အတွက်ကြောင့် child component ထဲက
+value or text changes ဖြစ်တဲ့အခါ parent component က value တွေ text တွေကလဲ changes လိုက်လုပ်ရတဲ့အခါမျိုးမှာအသုံးပြုတယ်။
+
+<pre>
+    <code>
+        this.$emit('custom-event', payloadValue); 
+    </code>
+</pre>
+
+Child Component 
+![child-comp-event](https://github.com/mmcodetester/vue-basic-myanmar-version/assets/72187529/812c4ddc-67c6-4008-bc4e-279d0205c73f)
+Parent Component
+![parent-comp-evt](https://github.com/mmcodetester/vue-basic-myanmar-version/assets/72187529/15bd6e66-1c47-4218-b3da-b7665a52ac27)
+
+
 ## Keep Alive
 <code>KeepAlive</code> 
 
