@@ -1,4 +1,6 @@
 # VUE JS MYANMAR
+Vue Js ကို Google ရဲ့ Former Engineer တစ်ယောက်ဖြစ်တဲ့ Evan You က create လုပ်ခဲ့ပြီး February 2014 မှာ public ကို release လုပ်ခဲ့တယ်။
+
 
 ### VUE JS
 1. javascript framework for building user interfaces.
