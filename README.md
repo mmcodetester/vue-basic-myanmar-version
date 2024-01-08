@@ -3,7 +3,7 @@ Vue Js ကို Google ရဲ့ Former Engineer တစ်ယောက်ဖြ
 သူက Google မှာ အလုပ်လုပ်နေစဉ် 2013 မှာတည်းက vue js ကို create လုပ်နေခဲ့တယ်။ release လုပ်ပြီးနောက်ပိုင်းမှာ vue js က popular ဖြစ်လာခဲ့ပြီးတော့ UI တွေ Single Page Application တွေ
 create လုပ်တဲ့အခါ အသုံးများတဲ့ Javascript Framework တစ်ခုဖြစ်လာခဲ့တယ်။
 
-
+Vue Js  က FrontEnd Development အတွက်လိုအပ်တဲ့ common features တွေစုစည်းပါဝင်တဲ့ Framework တစ်ခု၊ Ecosytstem တစ်ခုပဲဖြစ်ပါတယ်။ Vue Js က ပြုပြင်ပြောင်းလဲလွယ်ပြီး new technologies တွေ frameworks တွေနဲ့ integrate လုပ်တဲ့အခါ ရှိပြီးသား system တစ်ခုလုံးကို အကုန်လိုက်ပြီး changes လုပ်ဖို့မလိုပဲနဲ့ လိုအပ်တဲ့အပိုင်းတွေကိုပဲ ပြင်ဆင်နိုင်အောင် Design ဆွဲထားတဲ့ Framwwork တစ်ခုပဲဖြစ်ပါတယ်။
 
 ### VUE JS
 1. javascript framework for building user interfaces.
