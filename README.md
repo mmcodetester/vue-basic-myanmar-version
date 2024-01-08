@@ -167,6 +167,17 @@ HTML page တွေမှာ Vue ကို CDN ကနေအသုံးပြု
 Vue js ကို Vue SFC Playground Link မှတစ်ဆင့် Test ပြုလုပ်နိုင်ပါတယ်။
 [Vue SFC Playground](https://play.vuejs.org/)
 
+### Using ES Module Build 
+Modern Browser အများစုဟာ ES Native Module တွေကို support လုပ်တဲ့အတွက်ကြောင့် vue ကို ES Module မှပုံစံနဲ့ vue CDN ကိုအသုံးပြုနိုင်ပါတယ်။ ES Module ပုံစံ အသုံးပြုပါက <code><script type="module"></script> </code> ထဲကနေ အသုံးပြုရမှာဖြစ်ပါတယ်။
+#### usage
+<pre>
+  <code class="vue" style="margin-left:-140px;">
+    &lt;script type="module&gt;
+      import { createApp, ref } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
+    &lt;/script&gt;
+  </code>
+</pre>
+
 #### Attribute Declaration (Variable Declaration)
 vue မှာ string၊ integer၊ List အစရှိတဲ့ varablesတွေကို declare လုပ်လိုတဲ့အခါ data function ရဲ့ return value ထဲမှာ declare လုပ်ပေးရမှာဖြစ်ပါတယ်။
 #### example
