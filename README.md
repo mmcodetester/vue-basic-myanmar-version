@@ -18,6 +18,16 @@ Vue Js  က FrontEnd Development အတွက်လိုအပ်တဲ့ comm
 1. automatically tracks JavaScript state changes
 2. efficiently updates the DOM when the state change
 
+### Global API
+####  Application API
+<ol>
+    <li>createApp()</li>
+    Create an instance of application. (Application instance တစ်ခု create ပြုလုပ်ခြင်း) <br/>
+     - createApp function က vue application create လုပ်ရန်အတွက် root function ဖြစ်ပြီး Root Component နဲ့  Root Component ရဲ့ props တွေကို Passed လုပ်ပေးတဲ့ optional argument လည်းပါရှိပါတယ်။<br/>
+    <code>function createApp(rootComponent: Component, rootProps?: object): App</code>
+</ol>
+
+
 
 ### Document Object Model (DOM)
 DOM (Document Object Model) ဆိုတာ Web Document အတွက် HTML,XML Document တို့လိုမျိုး tree-like structure programming interface တစ်ခုပဲဖြစ်ပါတယ်။ DOM ဟာ programs တွေ scripts တွေကို dynically access လုပ်ပေးပြီး၊ web document ရဲ့ content တွေ structure တွေ style တွေကို manipulate လုပ်ပေးနိုင်တယ်။ Vue Js ဟာ DOM ကိုသုံးထားပြီးတော့ UI ကို manipulate လုပ်နေတယ် ပြီးတော့ data state တစ်ခုခု changes ဖြစ်တိုင်းအလိုအလျှောက် Update လုပ်ပေးတဲ့  framework တစ်ခုဖြစ်တယ်။ Vue Js မှာ DOM က application's data နဲ့ UI ကို Synchronization လုပ်ပြီး changes တစ်ခုဖြစ်တာနဲ့ UI ရော data ကိုရော Update လုပ်ပေးတယ်။
