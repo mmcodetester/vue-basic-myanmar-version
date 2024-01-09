@@ -28,18 +28,22 @@ Vue Js  က FrontEnd Development အတွက်လိုအပ်တဲ့ comm
         function createApp(rootComponent: Component, rootProps?: object): App        
     </code>    
     Root componenet အတွင်းမှာပဲ ရေးမယ်ဆိုရင် <br/>    
+    <pre>
     <code>
         import { createApp } from 'vue'
         const app = createApp({
           /* root component options */
         })
     </code>
+    </pre>    
     လို့ ရေးရပြီး Component ကို import လုပ်ပြီး အသုံးပြုမယ်ဆိုရင် <br/>
+    <pre>
     <code>
         import { createApp } from 'vue'
         import App from './App.vue'        
         const app = createApp(App)
     </code>
+    </pre>
     ဆိုပြီးအသုံးပြုရမှာဖြစ်ပါတယ်။
 </ol>
 
