@@ -24,7 +24,27 @@ Vue Js  က FrontEnd Development အတွက်လိုအပ်တဲ့ comm
     <li>createApp()</li>
     Create an instance of application. (Application instance တစ်ခု create ပြုလုပ်ခြင်း) <br/>
      - createApp function က vue application create လုပ်ရန်အတွက် root function ဖြစ်ပြီး Root Component နဲ့  Root Component ရဲ့ props တွေကို Passed လုပ်ပေးတဲ့ optional argument လည်းပါရှိပါတယ်။<br/>
-    <code>function createApp(rootComponent: Component, rootProps?: object): App</code>
+    <code>
+        
+        function createApp(rootComponent: Component, rootProps?: object): App
+        
+    </code>
+    Root componenet အတွင်းမှာပဲ ရေးမယ်ဆိုရင် 
+    <code>
+        import { createApp } from 'vue'
+
+        const app = createApp({
+          /* root component options */
+        })
+    </code>
+    လို့ ရေးရပြီး Component ကို import လုပ်ပြီး အသုံးပြုမယ်ဆိုရင် 
+    <code>
+        import { createApp } from 'vue'
+        import App from './App.vue'
+        
+        const app = createApp(App)
+    </code>
+    ဆိုပြီးအသုံးပြုရမှာဖြစ်ပါတယ်။
 </ol>
 
 
