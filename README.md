@@ -43,6 +43,7 @@ Vue Js  က FrontEnd Development အတွက်လိုအပ်တဲ့ comm
     </code>
     </pre>
     ဆိုပြီးအသုံးပြုရမှာဖြစ်ပါတယ်။
+     <li>app.mount()</li>
 </ol>
 
 
