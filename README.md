@@ -872,40 +872,41 @@ https://github.com/mmcodetester/vue-basic-myanmar-version/assets/72187529/9f39f0
 ## Props
 Parent Component ကနေ Child Component တွေကို Data Parsing ပြုလုပ်လိုစသည့်အခါ Prop ကို အသုံးပြုရမှာဖြစ်ပါတယ်။
 #### Example 
+
 Comp.vue (child component)
 <pre>
     <code>
-            <template>
+            &lt;template&gt;
         	    <h1>{{title}}</h1>
-            </template>
-            <script>
+            &lt;/template&gt;
+            &lt;script&gt;
             	export default {
             	name: 'Comp',
             		props:{
             			title:String,
             		}
             	}
-            </script>
+            &lt;/script&gt;
     </code>
 </pre>
 App.vue (child component)
+
 <pre>
     <code>
-        <template>
-        	<div>
+        &lt;template&gt;
         		<Comp title="Hello World"/>
-        	</div>
-        </template>
-        <script>
+        &lt;template&gt;
+         &lt;script&gt;
         	import Comp from './Comp.vue'; 
         	export default {
         		components:{
         			Comp
         		}
         	}
-        </script>
+         &lt;/script&gt;
     </code>
 </pre>
+
 ## Event
 ### custom event
 vue ရဲ့ $emit event ဆိုတာ child Component ကနေ parent component တွေဆီကို custom event တွေပို့ဖို့အတွက်အသုံးပြုတဲ့ function တစ်ခုဖြစ်ပါတယ်။
