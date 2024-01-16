@@ -48,17 +48,16 @@ Vue Js  က FrontEnd Development အတွက်လိုအပ်တဲ့ comm
     The argument can either be an actual DOM element or a CSS selector (the first matched element will be used). Returns the root component instance.
     <pre>
         <code>
-
              <script>
-              const { createApp } = Vue;
-              createApp({
-                  data() {
-                      return {
-                          count: 0
-                      }
-                  },
-              }).mount('#app')
-          </script>
+                  const { createApp } = Vue;
+                  createApp({
+                      data() {
+                          return {
+                              count: 0
+                          }
+                      },
+                  }).mount('#app')
+              </script>
         </code>
     </pre>
 </ol>
