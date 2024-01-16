@@ -894,7 +894,7 @@ App.vue (child component)
 <pre>
     <code>
         &lt;template&gt;
-        		<Comp title="Hello World"/>
+        		&lt;Comp title="Hello World"/&lt;
         &lt;template&gt;
          &lt;script&gt;
         	import Comp from './Comp.vue'; 
