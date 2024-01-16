@@ -44,7 +44,7 @@ Vue Js  က FrontEnd Development အတွက်လိုအပ်တဲ့ comm
     </pre>
     ဆိုပြီးအသုံးပြုရမှာဖြစ်ပါတယ်။
      <li>app.mount()</li>
-    Mounts the application instance in a container element. <br/>
+    Mounts the application instance in a container element. (Instance အား Container အတ္ငင်းသို့ Mount ပြုလုပ်ခြင်း) <br/>
     The argument can either be an actual DOM element or a CSS selector (the first matched element will be used). Returns the root component instance.
     <pre>
         <code>
