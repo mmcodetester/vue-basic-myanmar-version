@@ -877,7 +877,7 @@ Comp.vue (child component)
 <pre>
     <code>
             &lt;template&gt;
-        	    <h1>{{title}}</h1>
+        	    &lt;h1&gt{{title}}&lt;/h1&gt
             &lt;/template&gt;
             &lt;script&gt;
             	export default {
