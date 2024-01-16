@@ -60,6 +60,13 @@ Vue Js  က FrontEnd Development အတွက်လိုအပ်တဲ့ comm
               </script>
         </code>
     </pre>
+     <pre>
+        <code>
+          &lt;div id="app"&gt;
+              {{count}}
+          &lt;/div&gt;
+        </code>
+    </pre>
 </ol>
 
 
